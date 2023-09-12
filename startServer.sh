@@ -1,1 +1,1 @@
-hugo server --bind=0.0.0.0
+hugo server --bind=0.0.0.0 --baseURL=http://dev11.lan:1313
