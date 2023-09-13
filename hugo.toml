@@ -35,3 +35,13 @@ enableRobotsTXT = true
 [[params.ananke_socials]]
 name = 'github'
 url = 'https://github.com/toniebox-reverse-engineering'
+
+[menu]
+[[menu.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 10
+[[menu.main]]
+    name = 'How to start'
+    pageRef = '/howtoget'
+    weight = 20
