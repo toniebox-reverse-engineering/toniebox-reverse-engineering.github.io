@@ -1,2 +1,2 @@
 # Toniebox Reverse Engineering Website
-This repository contains the [Toniebox Reverse Engineering Website](toniebox-reverse-engineering.github.io) generated with [hugo](https://gohugo.io/installation/).  
+This repository contains the [Toniebox Reverse Engineering Website](https://toniebox-reverse-engineering.github.io) generated with [hugo](https://gohugo.io/installation/).  
