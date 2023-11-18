@@ -62,7 +62,7 @@ http://*.*.*.*/api/ajax?cmd=get-flash-file&filepath=/sys/pre-img.bin
 ```
 
 #### Copy over preloader
-![CFW Flash upload](https://raw.githubusercontent.com/toniebox-reverse-engineering/hackiebox_cfw_ng/master/wiki/images/InstallCfwFlashUpload.png)
+![CFW Flash upload](/img/InstallCfwFlashUpload.png)
 
 1) Select *Target* "Flash"
 2) Select *Local file* "flash/sys/mcuimg.bin"
