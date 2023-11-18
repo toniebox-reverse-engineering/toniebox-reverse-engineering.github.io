@@ -2,6 +2,7 @@
 title: "HackieboxNG Custom Bootloader"
 description: "Start and read!"
 weight: 10
+bookCollapseSection: true
 ---
 
 # HackieboxNG Custom Bootloader

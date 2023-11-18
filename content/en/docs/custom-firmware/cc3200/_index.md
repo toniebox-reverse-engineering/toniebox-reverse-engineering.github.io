@@ -1,7 +1,7 @@
 ---
 title: "CC3200"
 description: "Start and read!"
-type: page
+bookCollapseSection: true
 ---
 
 Test
