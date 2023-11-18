@@ -4,7 +4,6 @@ title = 'Toniebox Hacking'
 theme = 'hugo-book'
 DefaultContentLanguage = 'en'
 
-
 # (Optional) Set this to true to enable 'Last Modified by' date and git author
 #  information on 'doc' type pages.
 enableGitInfo = true
@@ -15,7 +14,15 @@ disableKinds = ['taxonomy', 'taxonomyTerm']  # (Optional, default light) Sets co
 [languages]
   [languages.en]
     weight = 1
-    contentDir = 'content/en'
+    languageName = 'English'
+  [languages.de]
+    weight = 2
+    languageName = 'Deutsch'
+
+[[menu.after]]
+  name = "GitHub"
+  url = "https://github.com/toniebox-reverse-engineering"
+  weight = 10
 
 [sitemap]
   changefreq = 'monthly'
@@ -53,12 +60,12 @@ disableKinds = ['taxonomy', 'taxonomyTerm']  # (Optional, default light) Sets co
   # Enable 'Edit this page' links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Path must point to the site directory.
-  # BookEditPath = 'edit/master'
+  BookEditPath = 'edit/master'
 
   # (Optional, default January 2, 2006) Configure the date format used on the pages
   # - In git information
   # - In blog posts
-  BookDateFormat = 'Jan 2, 2006'
+  BookDateFormat = '2006-01-02'
 
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
@@ -80,4 +87,8 @@ disableKinds = ['taxonomy', 'taxonomyTerm']  # (Optional, default light) Sets co
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
   # BookServiceWorker = true
+
+  # /!\ This is an experimental feature, might be removed or changed at any time
+  # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
+  BookTranslatedOnly = true
 
