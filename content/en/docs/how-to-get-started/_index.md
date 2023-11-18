@@ -1,8 +1,9 @@
 ---
 title: "How to get started?"
 description: "Start and read!"
-type: page
+weight: 10
 ---
+# How to get started?
 
 Let's start from zero. You have just bought a brand new Toniebox or you just found your way to this website.
 

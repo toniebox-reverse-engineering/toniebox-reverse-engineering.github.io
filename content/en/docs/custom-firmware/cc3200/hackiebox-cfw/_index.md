@@ -1,5 +1,5 @@
 ---
-title: "Hackiebox NG Custom Bootloader (CC3200)"
+title: "Hackiebox Custom Firmware"
 description: "Start and read!"
 type: page
 ---
