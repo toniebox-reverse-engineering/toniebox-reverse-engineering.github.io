@@ -18,8 +18,8 @@ The HackieboxNG SD bootloader consists of two stages. The first stage is a sd bo
 * Loading any CC3200 standard firmware
 * Loading the original firmware directly
 * Simulate the OFW bootloaders behaviour
-* Patching binaries in memory for ex. domain name changes for teddyCloud, enable SLIX tags or disable charger wakeup ([more](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/wiki/OFWPatches))
+* Patching binaries in memory for ex. domain name changes for teddyCloud, enable SLIX tags or disable charger wakeup ([more](ofw-patches))
 * Highly configurable via json files
 
 ### Installation
-Please take a look into the [wiki](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/wiki/Install)
+Please take a look into the [wiki](install)
