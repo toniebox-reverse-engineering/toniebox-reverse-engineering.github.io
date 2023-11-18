@@ -1,6 +1,6 @@
 baseURL = 'https://toniebox-reverse-engineering.github.io'
 languageCode = 'en-gb'
-title = 'Toniebox Reverse Engineering'
+title = 'Toniebox Hacking'
 theme = 'hugo-book'
 DefaultContentLanguage = 'en'
 
