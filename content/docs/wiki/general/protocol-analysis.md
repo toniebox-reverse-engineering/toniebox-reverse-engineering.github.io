@@ -75,7 +75,7 @@ Responses with HTTP 304 Not Modified if file is already up to date otherwise wit
 |---|---|---|
 | 2 | PD-Firmware | |
 | 3 | EU-Firmware | |
-| 4 | Service Pack (cc3200) | |
+| 4 | Service Pack (cc3200/cc3235) | |
 | 5 | HTML | |
 | 6 | SFX | |
 
