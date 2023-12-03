@@ -1,5 +1,5 @@
 ---
-title: "TeddyBench"
+title: "teddyBench"
 description: "Start and read!"
 ---
 
