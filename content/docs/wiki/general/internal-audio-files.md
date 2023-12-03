@@ -2,7 +2,7 @@
 title: "Internal audio files"
 description: ""
 ---
-# Internal aduio files
+# Internal audio files
 
 ## Overview
 |Folder|Language|
@@ -10,8 +10,11 @@ description: ""
 |00000000|English (GB)|
 |00000001|German|
 |00000002|English (USA)|
+|00000003|French|
 
-# German
+## Language specific files
+### English (GB)
+### German
 |Folder|Language|File|Animal|Short|Long|   
 |-|-|-|-|-|-|
 |00000001|DE|00000000||Jingle|Startup sound|
@@ -39,3 +42,6 @@ description: ""
 |00000001|DE|00000016|Erdmännchen||Ohh oh, ein Fehler. Codewort Erdmännchen|
 |00000001|DE|00000017|Eule||Ohh oh, ein Fehler. Codewort Eule|
 |00000001|DE|00000018|Elefant||Ohh oh, ein Fehler. Codewort Elefant|
+
+### English (USA)
+### French
