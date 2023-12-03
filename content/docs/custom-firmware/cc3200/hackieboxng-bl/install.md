@@ -8,13 +8,13 @@ weight: 10
 
 ## Backup
 Please make a **full file based + flash backup** of your toniebox's flash with [cc3200tool](https://github.com/toniebox-reverse-engineering/cc3200tool).
-[More details on the usage of the cc3200tool and the required hardware can be found here](https://github.com/toniebox-reverse-engineering/toniebox/wiki/Debug-Port-&-Extract-Firmware)
+[More details on the usage of the cc3200tool and the required hardware can be found here](https://toniebox-reverse-engineering.github.io/docs/wiki/cc3200/debug-port/)
 *Python 3 is needed!* You may use a different COM port or the right device on linux ex. /dev/ttyUSB0.
 
 ```
 python cc.py -p COM3 read_all_files targetdir/ read_flash backup.bin
 ```
-Please check, if you dumped every [important file](https://github.com/toniebox-reverse-engineering/toniebox/wiki/Firmware-Format#Important-Toniebox-firmware-files). If not, please check the [known problems wiki entry of the cc3200tool for a workaround.](https://github.com/toniebox-reverse-engineering/toniebox/wiki/Known-Problems-and-Fixes#cc3200tool-related).
+Please check, if you dumped every [important file](https://toniebox-reverse-engineering.github.io/docs/wiki/cc3200/firmware-layout/#important-toniebox-firmware-files).
 
 ## HackieboxNG Bootloader
 
@@ -50,7 +50,7 @@ The box saves up to 3 different versions of the OFW. It can be found flash:/sys/
 ```
 python cc.py -p COM3 read_file /sys/mcuimg1.bin mcuimg1.bin read_file /sys/mcuimg2.bin mcuimg2.bin read_file /sys/mcuimg3.bin mcuimg3.bin
 ```
-To check which version the dumped firmwares are you may just open it with a hex editor (quite at the end) or use our [python tool](https://github.com/toniebox-reverse-engineering/toniebox/blob/master/tools/firmware_info.py) to extract it. If you found a new firmware, let us know by opening a push request for [our known firmware listing](https://github.com/toniebox-reverse-engineering/toniebox/wiki/Known-Firmwares) in the wiki.
+To check which version the dumped firmwares are you may just open it with a hex editor (quite at the end) or use our [python tool](https://github.com/toniebox-reverse-engineering/toniebox/blob/master/tools/firmware_info.py) to extract it. If you found a new firmware, let us know by opening a push request for [our known firmware listing](https://toniebox-reverse-engineering.github.io/docs/wiki/cc3200/firmware-list/) in the wiki.
 
 ### 1b) Preloader (Stage 1) - For updating the sd bootloader
 You may use the (old) Hackiebox CFW to upload the preloader. This way you can install it over the air without direct access to the flash if you have already installed a previous version of the cfw bootloader/preloader. Just run the Hackiebox CFW and use the webinterface to upload the new /sys/mcuimg.bin.
