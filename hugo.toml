@@ -20,9 +20,19 @@ disableKinds = ['taxonomy', 'taxonomyTerm']  # (Optional, default light) Sets co
     languageName = 'Deutsch'
 
 [[menu.after]]
-  name = "GitHub"
-  url = "https://github.com/toniebox-reverse-engineering"
-  weight = 10
+  identifier = "more"
+  name = "More"
+  weight = 0
+  [[menu.after]]
+    parent = "more"
+    name = "GitHub"
+    url = "https://github.com/toniebox-reverse-engineering"
+    weight = 10
+  [[menu.after]]
+    parent = "more"
+    name = "Telegram"
+    url = "https://t.me/toniebox_reverse_engineering"
+    weight = 20
 
 [sitemap]
   changefreq = 'monthly'
