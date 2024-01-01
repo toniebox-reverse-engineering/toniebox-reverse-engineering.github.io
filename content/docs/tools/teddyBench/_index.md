@@ -1,6 +1,4 @@
 ---
 title: "teddyBench"
-description: "Start and read!"
+Link to: "https://github.com/toniebox-reverse-engineering/teddy/releases"
 ---
-
-Test
