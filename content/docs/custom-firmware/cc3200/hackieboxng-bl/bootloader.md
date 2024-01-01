@@ -42,7 +42,7 @@ Filepath: sd:/revvox/boot/ng-*XXXY*.bin
 ***All error codes for the bootloader are in green.***
 
 ### Configuration
-The configuration for the bootloader is saved within [sd:/revvox/boot/ngCfg.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/ngCfg.json). All sections or keys starting with and underscore "_" a comments and will be ignored.
+The configuration for the bootloader is saved within [sd:/revvox/boot/ngCfg.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/ngCfg.json). All sections or keys starting with an underscore "_" are comments and will be ignored.
 #### General Section
 | Key | Description | Values | Default |
 | - | - | - | - | 
