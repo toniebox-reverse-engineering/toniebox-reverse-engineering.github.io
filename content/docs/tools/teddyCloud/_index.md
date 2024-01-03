@@ -13,7 +13,7 @@ to host your own figurine audio files on e.g. your NAS or any other server.
 ## Docker hints
 The docker container automatically generates the server certificates on first run. You can extract the ```certs/server/ca.der``` for your box after that. 
 
-An example [docker-compose.yaml can be found within the docker subdir.](docker/docker-compose.yaml)
+An example [docker-compose.yaml can be found within the docker subdir.](https://github.com/toniebox-reverse-engineering/teddycloud/blob/master/docker/docker-compose.yaml)
 
 ## Preparation
 You may need to connect your Toniebox to your wifi and update its firmware. Many boxes are shipped with a production firmware only that needs to be updated, before the box works as it should.
