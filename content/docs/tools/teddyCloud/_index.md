@@ -15,6 +15,9 @@ The docker container automatically generates the server certificates on first ru
 
 An example [docker-compose.yaml can be found within the docker subdir.](docker/docker-compose.yaml)
 
+## Preparation
+You may need to connect your Toniebox to your wifi and update its firmware. Many boxes are shipped with a production firmware only that needs to be updated, before the box works as it should.
+
 ## Device specific preparation
 Please check wether you got a Toniebox with a CC3200, CC3235 or ESP32 and continue with the following steps:
 * [Dump CA and client certificates](dump-certs)
