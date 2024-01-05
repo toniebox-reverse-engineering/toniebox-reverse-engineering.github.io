@@ -15,6 +15,7 @@ After that you can manually extract them into the ```/certs/client/``` directory
 # Please check the filename of your backup
 teddycloud ESP32CERT extract data/firmware/ESP32_<mac>.bin certs/client
 ```
+Please check the filename of the extracted certs, especially upper / lower case !
 
 ## Legacy
 ```
