@@ -14,6 +14,8 @@ This also generates the replacement CA for the toniebox ```certs/server/ca.der``
 ## Dump certificates of your toniebox
 You'll need the ```flash:/cert/ca.der``` (Boxine CA), ```flash:/cert/client.der``` (Client Cert) and ```flash:/cert/private.der``` (Client private key). Place those files under ```/certs/client/*```. You can either power the box with the battery (be sure it is not empty) or with the power supply. (recommended)
 
+Keep a backup of the certificates, especially the client.der and private.der. Without it you won't be able to connect to the cloud anymore!
+
 ## Device specific
 Please continue with the device specific step for your device: 
 * [CC3200](cc3200)
