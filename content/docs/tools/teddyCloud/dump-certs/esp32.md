@@ -5,8 +5,10 @@ description: ""
 
 # ESP32
 You can extract the flash memory via the debug port of the box and the esptool. Keep your backup! Please use a recent version of esptool. (>v4.4)
-Please connect the jumper J100 (Boot) and reset the box to put it into the required mode. Connect your 3.3V UART to J103 (TxD, RxD, GND).
-If connected with the Boot jumper, the box just start in "DOWNLOAD (USB/UART0)" mode. (Check with a serial monitor). Beware, if the serial monitor is open it will block esptool.py from accessing the esp. If you get a "BROWNOUT_RST" check your power supply / battery. "SPI_FAST_FLASH_BOOT" indicates a boot without the J100 jumper. 
+Please connect the jumper J100 (Boot) and reset the box to put it into the required UARTmode. Connect your 3.3V UART to J103 (TxD, RxD, GND).
+![J103 Pinout](/img/tb-esp32-uart.jpg)
+
+If connected with the Boot jumper, the box just start in "DOWNLOAD (USB/UART0)" mode (Check with a serial monitor) and the LED will be off. Beware, if the serial monitor is open it will block esptool.py from accessing the esp. If you get a "BROWNOUT_RST" check your power supply / battery. "SPI_FAST_FLASH_BOOT" indicates a boot without the J100 jumper. 
 
 ## Browser based
 You can use the build in ESP32 box flashing tool in the webinterface of teddyCloud to backup your box with "Read ESP32".
