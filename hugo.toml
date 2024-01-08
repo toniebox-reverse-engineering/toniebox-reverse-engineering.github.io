@@ -30,9 +30,14 @@ disableKinds = ['taxonomy', 'taxonomyTerm']  # (Optional, default light) Sets co
     weight = 10
   [[menu.after]]
     parent = "more"
-    name = "Telegram"
+    name = "Telegram Chat"
     url = "https://t.me/toniebox_reverse_engineering"
     weight = 20
+  [[menu.after]]
+    parent = "more"
+    name = "Discourse Forum"
+    url = "https://forum.revvox.de/"
+    weight = 30
 
 [sitemap]
   changefreq = 'monthly'
