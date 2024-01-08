@@ -5,7 +5,7 @@ weight: 10
 bookCollapseSection: true
 ---
 
-# HackieboxNG Custom Bootloader
+# HackieboxNG Custom Bootloader for CC3200
 
 ## Introduction
 HackieboxNG is the next generation bootloader for your cc3200 based toniebox!
@@ -23,3 +23,7 @@ The HackieboxNG SD bootloader consists of two stages. The first stage is a sd bo
 
 ### Installation
 Please take a look into the [wiki](install)
+
+## Links
+* [GitHub](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng)
+* [Releases](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/releases)

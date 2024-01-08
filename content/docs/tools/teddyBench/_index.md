@@ -2,5 +2,8 @@
 title: "teddyBench"
 description: "Start and read!"
 ---
+# teddyBench
 
-Test
+## Links
+* [GitHub](https://github.com/toniebox-reverse-engineering/teddy)
+* [Releases](https://github.com/toniebox-reverse-engineering/teddy/releases)

@@ -16,7 +16,6 @@ The docker container automatically generates the server certificates on first ru
 An example [docker-compose.yaml can be found within the docker subdir.](https://github.com/toniebox-reverse-engineering/teddycloud/blob/master/docker/docker-compose.yaml)
 Please beware that port 443 cannot be remapped. The client certificate authentication needs to be done by teddyCloud. There is no SNI.
 
-
 ## Preparation
 You may need to connect your Toniebox to your wifi and update its firmware. Many boxes are shipped with a production firmware only that needs to be updated, before the box works as it should.
 
@@ -35,3 +34,7 @@ Please put your content into the ```/data/content/default/``` in the same struct
 Currently the interface to teddycloud is reachable through the IP of the docker container at port 80 or 443 (depending on your ```docker-compose.yaml```). Changes affecting the toniebox (volume, LED) which are made through this interface will only be reflected onto the toniebox after pressing the big ear for a few seconds until a beep occurs.
 
 As an additional frontend is still being developed, you can reach a second frontend at ```xxx.xxx.xxx/web```. Changes made here are instantly live on the box.
+
+## Links
+* [GitHub](https://github.com/toniebox-reverse-engineering/teddycloud)
+* [Releases](https://github.com/toniebox-reverse-engineering/teddycloud/releases)
