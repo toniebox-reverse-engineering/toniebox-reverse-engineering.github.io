@@ -1,4 +1,4 @@
-baseURL = 'https://toniebox-reverse-engineering.github.io'
+baseURL = 'https://tonies-wiki.revvox.de'
 languageCode = 'en-gb'
 title = 'Toniebox Hacking'
 theme = 'hugo-book'
