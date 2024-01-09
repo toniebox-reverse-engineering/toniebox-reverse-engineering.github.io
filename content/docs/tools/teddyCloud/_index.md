@@ -33,7 +33,7 @@ Please put your content into the ```/data/content/default/``` in the same struct
 ### Webinterface
 Currently the interface to teddycloud is reachable through the IP of the docker container at port 80 or 443 (depending on your ```docker-compose.yaml```). Changes affecting the toniebox (volume, LED) which are made through this interface will only be reflected onto the toniebox after pressing the big ear for a few seconds until a beep occurs. 
 
-![image](https://github.com/toniebox-reverse-engineering/toniebox-reverse-engineering.github.io/assets/5244525/344c936d-9d7f-4bf4-80b7-57f8be634ec3)
+![Screnshot](/img/Webinterface.png)
 
 
 As an additional frontend is still being developed, you can reach a second frontend at ```xxx.xxx.xxx/web```. Changes made here are instantly live on the box.
