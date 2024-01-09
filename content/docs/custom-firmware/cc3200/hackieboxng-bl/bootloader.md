@@ -24,7 +24,7 @@ When no ear is pressed, the bootloader loads the selected standard bootslot. If 
 Filepath: sd:/revvox/boot/ng-*XXXY*.bin
 
 ### Green group - Original firmware
-1) **ofw1** - OFW bootloader from flash:/sys/pre-img.bin  recommended here
+1) **ofw1** - OFW bootloader from flash:/sys/pre-img.bin recommended here (as a backup)
 2) **ofw2** - simulate OFW behaviour and load the same image like the OFW would, but with patches
 3) **ofw3** - specific OFW file with patches (optional)
 
@@ -37,6 +37,9 @@ Filepath: sd:/revvox/boot/ng-*XXXY*.bin
 1) **add1** - (optional)
 2) **add2** - (optional)
 3) **add3** - (optional)
+
+### Additional
+The first two slots **ofw1** and **ofw2** are special, as they do not boot from microSD. Slot **ofw1** boots from `flash:/sys/pre-img.bin` and slot **ofw2** simulates the ofw bootloader, but allows patching. If you want to run a patched OFW using **ofw2** is recommended. As standard **ofw1** is set and booted. Change `activeImg` to **ofw2** if you want to boot **ofw2** on startup.
 
 
 ***All error codes for the bootloader are in green.***
