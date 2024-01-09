@@ -22,6 +22,7 @@ jobs:
         with:
           hugo-version: '0.118.2'
           extended: true
+          cname: tonies-wiki.revvox.de
 
       - name: Build
         run: hugo --minify
