@@ -54,7 +54,7 @@ Grab your favourite USB-UART **3.3V** interface, recommending those with DTR or 
 
 ## Toolset
 Use [cc3200tool](https://github.com/toniebox-reverse-engineering/cc3200tool) to extract the firmware. Just download it to your favorite location.
-You will need to install python3 (including pip3). The [cc3200tool](https://github.com/toniebox-reverse-engineering/cc3200tool) needs the package pyserial (which can be automatically installed via the setup.py). You may install it manually via `pip3 install pyserial`. To make the process easier, we just call the cc.py within the `cc3200tool/` directory. 
+You will need to install python3 (including pip3). The [cc3200tool](https://github.com/toniebox-reverse-engineering/cc3200tool) needs the package pyserial (which can be automatically installed via the setup.py). You may install it manually via `pip3 install pyserial`.
 
 ## Connection
 Please connect the toniebox to your power supply and/or battery. Please double check your UART that its VCC is 3.3V and not 5.0V. If your UART is missing DTR you will need to connect the Toniebox RST to GND for a moment before each command to reset the box. If you reset the box it should glow green all the time without booting and playing its startup jingle.
@@ -77,13 +77,13 @@ You may replace COM3 with the right port on your computer (linux ex. /dev/ttyUSB
 
 | | Descriptiion | Command |
 | - | - | - |
-| 1 | List files in FatFS (useful to check the connection) | `python cc.py -p COM3 list_filesystem` |
-| 2 | Extract full firmware | `python cc.py -p COM3 read_flash firmware.dmp` |
-| 3 | Extract all files | `python cc.py -p COM3 read_all_files ./target_dir` |
-| 4 | Extract singe files | `python cc.py -p COM3 read_file /sys/mcuimg.bin ./sys/mcuimg.bin` |
-| 5 | Extract firmware and files | `python cc.py -p COM3 read_flash firmware.dmp read_all_files ./target_dir` |
-| 6 | List files in FatFS with DTR auto reset | `python cc.py -p COM3 --reset dtr list_filesystem` |
-| 7 | List files in FatFS with DTR/RTS auto reset/sop2 | `python cc.py -p COM3 --reset dtr --sop2 ~rts list_filesystem` |
+| 1 | List files in FatFS (useful to check the connection) | `cc3200tool -p COM3 list_filesystem` |
+| 2 | Extract full firmware | `cc3200tool -p COM3 read_flash firmware.dmp` |
+| 3 | Extract all files | `cc3200tool -p COM3 read_all_files ./target_dir` |
+| 4 | Extract singe files | `cc3200tool -p COM3 read_file /sys/mcuimg.bin ./sys/mcuimg.bin` |
+| 5 | Extract firmware and files | `cc3200tool -p COM3 read_flash firmware.dmp read_all_files ./target_dir` |
+| 6 | List files in FatFS with DTR auto reset | `cc3200tool -p COM3 --reset dtr list_filesystem` |
+| 7 | List files in FatFS with DTR/RTS auto reset/sop2 | `cc3200tool -p COM3 --reset dtr --sop2 ~rts list_filesystem` |
 
 If you are done, either disconnect the box from the charger and battery or remove SOP2 from VCC and connect the Toniebox RST to GND for a moment to reset the box.
 

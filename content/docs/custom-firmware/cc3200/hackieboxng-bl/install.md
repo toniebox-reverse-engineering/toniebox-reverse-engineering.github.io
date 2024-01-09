@@ -12,7 +12,7 @@ Please make a **full file based + flash backup** of your toniebox's flash with [
 *Python 3 is needed!* You may use a different COM port or the right device on linux ex. /dev/ttyUSB0.
 
 ```
-python cc.py -p COM3 read_all_files targetdir/ read_flash backup.bin
+cc3200tool -p COM3 read_all_files targetdir/ read_flash backup.bin
 ```
 Please check, if you dumped every [important file](https://toniebox-reverse-engineering.github.io/docs/wiki/cc3200/firmware-layout/#important-toniebox-firmware-files).
 
@@ -33,22 +33,22 @@ First of all you need to copy your just backuped original mcuimg.bin (original b
 Please don't confuse the mcuimg.bin (ofw bootloader) you are going to dump with the mcuimg.bin within the hackiebox zip package. (/flash/sys/mcuimg.bin)
 
 ```
-python cc.py -p COM3 read_file /sys/mcuimg.bin mcuimg.bin
-python cc.py -p COM3 write_file mcuimg.bin /sys/pre-img.bin
+cc3200tool -p COM3 read_file /sys/mcuimg.bin mcuimg.bin
+cc3200tool -p COM3 write_file mcuimg.bin /sys/pre-img.bin
 ```
 #### Install preloader
 ```
-python cc.py -p COM3 write_file flash/sys/mcuimg.bin /sys/mcuimg.bin
+cc3200tool -p COM3 write_file flash/sys/mcuimg.bin /sys/mcuimg.bin
 ```
 #### Or as oneliner
 ```
-python cc.py -p COM3 read_file /sys/mcuimg.bin mcuimg.bin write_file mcuimg.bin /sys/pre-img.bin write_file flash/sys/mcuimg.bin /sys/mcuimg.bin
+cc3200tool -p COM3 read_file /sys/mcuimg.bin mcuimg.bin write_file mcuimg.bin /sys/pre-img.bin write_file flash/sys/mcuimg.bin /sys/mcuimg.bin
 ```
 
 #### Dumping the original firmware
 The box saves up to 3 different versions of the OFW. It can be found flash:/sys/mcuimgN.bin (replace N with 1, 2 or 3). A command to dump all three versions would be:
 ```
-python cc.py -p COM3 read_file /sys/mcuimg1.bin mcuimg1.bin read_file /sys/mcuimg2.bin mcuimg2.bin read_file /sys/mcuimg3.bin mcuimg3.bin
+cc3200tool -p COM3 read_file /sys/mcuimg1.bin mcuimg1.bin read_file /sys/mcuimg2.bin mcuimg2.bin read_file /sys/mcuimg3.bin mcuimg3.bin
 ```
 To check which version the dumped firmwares are you may just open it with a hex editor (quite at the end) or use our [python tool](https://github.com/toniebox-reverse-engineering/toniebox/blob/master/tools/firmware_info.py) to extract it. If you found a new firmware, let us know by opening a push request for [our known firmware listing](https://toniebox-reverse-engineering.github.io/docs/wiki/cc3200/firmware-list/) in the wiki.
 

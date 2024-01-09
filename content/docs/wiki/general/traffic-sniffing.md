@@ -116,7 +116,7 @@ openssl rsa -inform PEM -outform DER -in private.key -out private.der
 
 ## Certificate upload
 ```
-cc.py -p COM6 write_file z:\fakessl\box_fake\client.der /cert/client.der write_file z:\fakessl\box_fake\private.der /cert/private.der write_file z:\fakessl\fake\ca.der /cert/ca.der
+cc3200tool -p COM6 write_file z:\fakessl\box_fake\client.der /cert/client.der write_file z:\fakessl\box_fake\private.der /cert/private.der write_file z:\fakessl\fake\ca.der /cert/ca.der
 ```
 
 ## Concat certificates to PEM
