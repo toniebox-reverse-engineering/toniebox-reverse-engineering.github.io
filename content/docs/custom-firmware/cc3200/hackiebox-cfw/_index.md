@@ -2,6 +2,7 @@
 title: "Hackiebox CFW PoC"
 description: "Start and read!"
 type: page
+bookCollapseSection: true
 ---
 # Hackiebox Proof of Concept Custom Firmware for CC3200
 
