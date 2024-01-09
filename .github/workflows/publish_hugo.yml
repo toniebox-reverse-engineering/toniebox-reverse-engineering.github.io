@@ -22,7 +22,6 @@ jobs:
         with:
           hugo-version: '0.118.2'
           extended: true
-          cname: tonies-wiki.revvox.de
 
       - name: Build
         run: hugo --minify
@@ -33,3 +32,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+          cname: tonies-wiki.revvox.de
