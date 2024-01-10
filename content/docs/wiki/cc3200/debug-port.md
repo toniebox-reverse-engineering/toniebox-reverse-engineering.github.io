@@ -39,7 +39,7 @@ Datasheet: [Tag Connect TC2050-IDC-NL](https://www.tag-connect.com/wp-content/up
 
 Available at: [Tag Connect TC2050-IDC-NL](https://www.tag-connect.com/product/tc2050-idc-nl-10-pin-no-legs-cable-with-ribbon-connector)
 
-Alternative (cheaper): [PCB Clip 1.27mm 5 Pin Double Row](https://a.aliexpress.com/_BSuEeo)
+Alternative (cheaper): [PCB Clip 1.27mm 5 Pin Double Row](https://aliexpi.com/xJQX)
 
 # Boot Mode
 The CC3200 device implements a sense-on-power (SoP) scheme to switch between two modes that are available within the Tonie project. (To switch between the boot modes a restart of the device is needed.) [CC3200 datasheet 5.9.3](http://www.ti.com/lit/ds/symlink/cc3200.pdf)
