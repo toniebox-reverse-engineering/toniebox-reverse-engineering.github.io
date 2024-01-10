@@ -23,7 +23,7 @@ description: ""
 |00000001|DE|00000003||Tadududu|Low battery?|
 |00000001|DE|00000004||Empty||
 |00000001|DE|00000005||Empty||
-|00000001|DE|00000006||Clingclong|Download complete|
+|00000001|DE|00000006||Clingclong|Audiofile finished|
 |00000001|DE|00000007||Offlinemode on|Der Offlinemodus ist jetzt aktiviert|
 |00000001|DE|00000008||Offlinemode off|Der Offlinemodus wurde beendet|
 |00000001|DE|00000009||Low battery|Ohhoh, mein Akku ist leer und ich muss abschalten. Bitte stell mich auf die Ladestation.|
