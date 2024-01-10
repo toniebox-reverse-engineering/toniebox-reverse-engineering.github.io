@@ -12,9 +12,11 @@ If connected with the Boot jumper, the box just start in "DOWNLOAD (USB/UART0)" 
 
 ## Browser based
 You can use the build in ESP32 box flashing tool in the webinterface of teddyCloud to backup your box with "Read ESP32".
-After that you can manually extract them into the ```/certs/client/``` directory.
+After that you can manually extract them into the ```/certs/client/``` directory. You can either do that with the teddycloud executable on your computer or you may do it via the docker shell `docker exec -it <container-name> bash`.
 ```
 # Please check the filename of your backup
+# Be sure you are in the teddycloud directory
+# cd /teddycloud/ # just for docker
 teddycloud ESP32CERT extract data/firmware/ESP32_<mac>.bin certs/client
 ```
 Please check the filename of the extracted certs, especially the case! Change them to lowercase if they are uppercase.
