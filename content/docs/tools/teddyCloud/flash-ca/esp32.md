@@ -20,4 +20,7 @@ teddycloud ESP32CERT inject tb.esp32.fakeca.bin certs/client/esp32-fakeca
 esptool.py -b 921600 write_flash 0x0 tb.esp32.fakeca.bin
 ```
 
+![Flash ESP32 Image](/img/esp32_write_patched_image_with_esptools.png)
+
+
 [Please continue with DNS step for the ESP32](../../dns/esp32)
