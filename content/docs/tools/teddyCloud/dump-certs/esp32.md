@@ -26,6 +26,16 @@ mv certs/client/PRIVATE.DER certs/client/private.der
 mv certs/client/CA.DER certs/client/ca.der
 ```
 
+Read Flash![Screenshot 2024-01-14 202057](https://github.com/toniebox-reverse-engineering/toniebox-reverse-engineering.github.io/assets/5244525/6d0c0e16-bb95-42f4-9b6a-d2b941443489)
+
+
+Finished reading the image![Screenshot 2024-01-14 202736](https://github.com/toniebox-reverse-engineering/toniebox-reverse-engineering.github.io/assets/5244525/1d8cc5df-cf7e-4ba5-bc9e-f01487aa2888)
+
+Patch image
+![Screenshot 2024-01-14 202803](https://github.com/toniebox-reverse-engineering/toniebox-reverse-engineering.github.io/assets/5244525/9d80cd08-7544-4f41-bb22-726278f6c241)
+
+
+
 ## Legacy
 ```
 # extract firmware
