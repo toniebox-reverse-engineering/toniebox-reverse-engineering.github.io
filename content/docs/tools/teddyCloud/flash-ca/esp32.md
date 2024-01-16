@@ -20,4 +20,8 @@ teddycloud ESP32CERT inject tb.esp32.fakeca.bin certs/client/esp32-fakeca
 esptool.py -b 921600 write_flash 0x0 tb.esp32.fakeca.bin
 ```
 
+Flash ESP32 Image
+![Screenshot 2024-01-15 085240](https://github.com/toniebox-reverse-engineering/toniebox-reverse-engineering.github.io/assets/5244525/e7a9d38a-b779-40e1-84fb-bf13f75ac718)
+
+
 [Please continue with DNS step for the ESP32](../../dns/esp32)
