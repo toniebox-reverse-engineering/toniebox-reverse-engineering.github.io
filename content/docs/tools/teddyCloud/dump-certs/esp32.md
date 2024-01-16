@@ -26,11 +26,11 @@ mv certs/client/PRIVATE.DER certs/client/private.der
 mv certs/client/CA.DER certs/client/ca.der
 ```
 
-![Read flash](img/esp32_read_flash_webui.png)
+![Read flash](/img/esp32_read_flash_webui.png)
 
-![Finished reading the flash](img/esp32_read_flash_finished_webui.png)
+![Finished reading the flash](/img/esp32_read_flash_finished_webui.png)
 
-![Patchimage](img/esp32_patch_image_webui.png)
+![Patchimage](/img/esp32_patch_image_webui.png)
 
 
 
