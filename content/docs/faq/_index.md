@@ -7,7 +7,7 @@ weight: 15
 ## Is there a way to find out which kind of box I have...
 ### ... on the outside of the packaging?
 #### by made in X
-On the bottom of the box you can find if the box was made in china or hungary. Those from china are likely an esp32 based box (01/2024).
+On the bottom of the box you can find if the box was made in china or hungary. Those from china are likely an [ESP32](/docs/box-variants/esp32/) based box (01/2024).
 #### by serial
 The serial number just indictates when (year + week) and on which production line it was produced. As there a still boxes produces with [CC3200](/docs/box-variants/cc3200/) and [CC3235](/docs/box-variants/cc3235/) chips, you may also get them, beside a [ESP32](/docs/box-variants/esp32/) based one, if you buy a recent one. Tonies even reuses old pcbs for new boxes. 
 ### ... on the outside of the toniebox itself (by mac)?
