@@ -10,10 +10,10 @@ First of all please be sure the cloud is not enabled in the webinterface. Then c
 To be sure your toniebox can connect to teddyCloud we do a so called "freshnessCheck". This can be initiated by pressing one ear of the box until the LED is pulsing blue.
 
 ### Error: Codeword turtle (Schildkröte)
-If the box is flashing red and shouts the codeword turtle, be sure teddyCloud is running and the box can connect to your cloud. Check the [DNS step](dns).
+If the box is flashing red and shouts the codeword turtle, be sure teddyCloud is running and the box can connect to your cloud. Check the [DNS step](../dns).
 
 ### Error: Codeword owl (Eule)
-If the box is flashing red and shouts the codeword owl, be sure teddyClouds `certs/server/ca.der` is identical to the one on box. Please check the [Flash replacement CA step](flash-ca).
+If the box is flashing red and shouts the codeword owl, be sure teddyClouds `certs/server/ca.der` is identical to the one on box. Please check the [Flash replacement CA step](../flash-ca).
 
 Sometimes you'll need to regenerate teddyClouds certificates as it may be defective. For that delete all files in `certs/server/ca.der` and restart teddyCloud. We had the case that an esp32 based box worked with the certificate, but the cc3200 based one had trouble. After regenerating the certificates it was fine.
 
@@ -58,7 +58,7 @@ INFO |cloud_request.c:0208:web_request()|   trying IP: 3.69.182.181
 INFO |cloud_request.c:0036:httpClientTlsInitCallbackBase()| Initializing TLS...
 ERROR|cloud_request.c:0218:web_request()| Failed to connect to HTTP server! Error=2
 ```
-Please check your client certificates from the [dump CA and client certificates step](dump-certs).
+Please check your client certificates from the [dump CA and client certificates step](../dump-certs).
 ### Error case - prod.de.tbs.toys is resolved to teddyCloud
 ```
 INFO |cloud_request.c:0158:web_request| Connecting to HTTP server prod.de.tbs.toys:443...
