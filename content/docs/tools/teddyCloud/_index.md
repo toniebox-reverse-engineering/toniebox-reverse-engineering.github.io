@@ -25,6 +25,9 @@ Please check wether you got a Toniebox with a CC3200, CC3235 or ESP32 and contin
 * [Flash the replacement CA](flash-ca)
 * [DNS](dns)
 
+## Test & Troubleshooting
+If you have problems with teddyCloud or just want to be sure everything works as it should, please check our [Test & Troubleshooting site](test-troubleshooting).
+
 ## Additional
 
 ### Content
