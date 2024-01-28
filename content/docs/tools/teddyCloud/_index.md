@@ -14,10 +14,10 @@ to host your own figurine audio files on e.g. your NAS or any other server.
 The docker container automatically generates the server certificates on first run. You can extract the ```certs/server/ca.der``` for your box after that. 
 
 An example [docker-compose.yaml can be found within the docker subdir.](https://github.com/toniebox-reverse-engineering/teddycloud/blob/master/docker/docker-compose.yaml)
-Please beware that port 443 cannot be remapped. The client certificate authentication needs to be done by teddyCloud. There is no SNI.
+Please beware that port 443 cannot be remapped and you cannot use a reverse proxy like nginx or traefik. The client certificate authentication needs to be done by teddyCloud. Also, there is no SNI. If you are using docker, you can use macvlan to give the teddyCloud container a dedicated IP address.
 
 ## Preparation
-You may need to connect your Toniebox to your wifi and update its firmware. Many boxes are shipped with a production firmware only that needs to be updated, before the box works as it should.
+Please connect your Toniebox to your Wi-Fi and update its firmware. Many boxes are shipped with a production firmware that needs to be updated. Otherwise the box won't work as it should.
 
 ## Device specific preparation
 Please check wether you got a Toniebox with a CC3200, CC3235 or ESP32 and continue with the following steps:
