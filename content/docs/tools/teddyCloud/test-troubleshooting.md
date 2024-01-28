@@ -17,6 +17,10 @@ If the box is flashing red and shouts the codeword owl, be sure teddyClouds `cer
 
 Sometimes you'll need to regenerate teddyClouds certificates as it may be defective. For that delete all files in `certs/server/ca.der` and restart teddyCloud. We had the case that an esp32 based box worked with the certificate, but the cc3200 based one had trouble. After regenerating the certificates it was fine.
 
+This error can also happen if the box tries to reach the boxine cloud. Check the [DNS step](../dns).
+
+Alternativly you may use a reverse proxy like nginx or traefik between teddyCloud and your box. This is not supported, teddyCloud needs its own dedicated IP address.
+
 Example log output:
 ```
 INFO |server.c:0574:server_init()| 1 open HTTPS connections
