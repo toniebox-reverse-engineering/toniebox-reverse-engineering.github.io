@@ -69,4 +69,4 @@ ERROR|cloud_request.c:0218:web_request| Failed to connect to HTTP server! Error=
 INFO |handler_cloud.c:0692:handleCloudFreshnessCheck| Freshness check response: size=14, content=
 WARN |tls_server_fsm.c:0260:tlsPerformServerHandshake| TLS handshake failure!
 ```
-Please check if `prod.de.tbs.toys` and `rtnl.bxcl.de` are resolved to your teddyCloud instance. 
+Please check if `prod.de.tbs.toys` and `rtnl.bxcl.de` are resolved to your teddyCloud instance within its own container. Please either give your Toniebox a custom DNS that resolved them to teddyCloud or the teddyCloud instance a DNS that does not tamper the urls.
