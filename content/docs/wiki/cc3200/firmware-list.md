@@ -7,6 +7,7 @@ description: ""
 ## Normal firmwares
 |Version|Branch|Creation Date|Year|git short hash|Comments|hash|
 |-|-|-|-|-|-|-|
+|PD_V3.1.0_BF5-0|master|15 Feb 13:41||b6e1515||5a25756293f7263013ad70f875ed35412cae1b1d6662e5860bf36b81292a807e
 |PD_V3.1.0_BF4-0|master|27 May 10:33|2021|d8481fc||ea9dee23fe4f9967cb0ca232a31734d059fd0c4591c95e53722188b86ed2dd44|
 |EU_V3.1.0_BF2-0|3.1.0_BF2_EU|06 May 20:21|2021|2640c1f||36ef76a6937a128d3bf125d7f08c0c120387e44f7b0d346203a7171f828dafbe|
 |EU_V3.1.0_BF1-0|3.1.0_BF1_EU|30 Mar 23:49|2021|e73e1fb||e871f228e93563981f7dc433b11b4a09f90b64b0879909b19f12bf2083ad8fc3|
