@@ -24,9 +24,13 @@ You will find a directory called flash there for the file(s) that need to be cop
 If you don't mind a slightly slower boot but want some log output via UART (Baud 921600, TX Pin) use the debug variant (check the ngCfg.json to enable it!).
 
 ### Preface
-If you have previously installed the CFW SD Bootloader please use *1b)* otherwise for first time installation please use *1a)*.
+Installing the new bootloader is split into two stages and differs whether it's a first install or and update to an existing installation:
+ * Stage 1: Install the preloader
+   * [1a) First time installation](#stage1a)
+   * [1b) Existing installation](#stage1b)
+ * [Stage 2: Install the bootloader](#stage2)
 
-### 1a) Preloader (Stage 1) - For first time installation
+### Stage 1a: Preloader, first time installation {#stage1a}
 
 #### Move original bootloader
 First of all you need to copy your just backuped original mcuimg.bin (original bootloader) from your toniebox to a different location (flash:/sys/pre-img.bin) to boot it with the HackieboxNG Bootloader later on.
@@ -52,7 +56,10 @@ cc3200tool -p COM3 read_file /sys/mcuimg1.bin mcuimg1.bin read_file /sys/mcuimg2
 ```
 To check which version the dumped firmwares are you may just open it with a hex editor (quite at the end) or use our [python tool](https://github.com/toniebox-reverse-engineering/toniebox/blob/master/tools/firmware_info.py) to extract it. If you found a new firmware, let us know by opening a push request for [our known firmware listing](https://toniebox-reverse-engineering.github.io/docs/wiki/cc3200/firmware-list/) in the wiki.
 
-### 1b) Preloader (Stage 1) - For updating the sd bootloader
+#### Preloader installation finished
+You've installed the Preloader onto the Toniebox. Please continue with [Stage 2: Installing the bootloader](#stage2) onto the SD card.
+
+### Stage 1b: Preloader, updating existing installation {#stage1b}
 You may use the (old) Hackiebox CFW to upload the preloader. This way you can install it over the air without direct access to the flash if you have already installed a previous version of the cfw bootloader/preloader. Just run the Hackiebox CFW and use the webinterface to upload the new /sys/mcuimg.bin.
 
 #### Backup
@@ -76,9 +83,9 @@ To verify that the upload was successful you can download the mcuimg.bin from fl
 http://*.*.*.*/api/ajax?cmd=get-flash-file&filepath=/sys/mcuimg.bin
 ```
 
-### 2) Bootloader (Stage 2)
+### Stage 2: Installing the Bootloader {#stage2}
 #### SD files
-Copy over all the contents of the *sd* folder the sd card of the toniebox.
+Copy over all the contents of the *sd* folder to the sd card of the toniebox.
 Copy over the original bootloader (mcuimg.bin from your backup) to the first ofw slot *sd:/revvox/boot/ng-ofw1.bin*.
 Now the HackieboxNG bootloader will instantly boot the original bootloader and run the original firmware.
 
