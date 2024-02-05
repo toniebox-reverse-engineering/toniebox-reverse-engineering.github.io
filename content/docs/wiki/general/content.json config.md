@@ -1,11 +1,11 @@
 ---
-title: "500304E0.json config"
-description: "Info about the 500304E0.json file"
+title: "content.json config"
+description: "Info about the content json file"
 ---
-# 500304E0.json
-Each folder on the Toniebox contains a file called `500304E0.json` alongside the actual audio content. This file contains the configuration for the content.
+# content.json
+Each folder on the Toniebox contains a JSON-file whose name consists of the Tonies UID like `500304E0.json`. This file sits alongside the actual audio content and contains its configuration.
 
-Usually it looks like the following by default:
+Usually it looks like the following:
 
 ```
 {
@@ -24,6 +24,7 @@ Usually it looks like the following by default:
 
 ## Specification
 | Option         | Type   | Default | Description |
+|----------------|--------|---------|-------------|
 | live           | bool   | `false` |             |
 | nocloud        | bool   | `false` | Do not sync the directory with the boxine cloud |
 | source         | str    | `""`    |             |
@@ -37,17 +38,5 @@ Usually it looks like the following by default:
 
 ## Examples
 
-Custom audiobooks that you added to Teddycloud (no official Tonies) typically will have `nocloud` enabled:
-```
-TODO
-```
-
-Official Tonies will have the following default config:
-```
-TODO
-```
-
-You can download content right from an URL by setting the `source`. In combination with `nocloud` you can easily set up custom content:
-```
-TODO
-```
+* Custom audiobooks that you added to Teddycloud (no official Tonies) typically will have `nocloud` enabled
+* You can download content right from an URL by setting the `source`. In combination with `nocloud` you can easily set up custom content
