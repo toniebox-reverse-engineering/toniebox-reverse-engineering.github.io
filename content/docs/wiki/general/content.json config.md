@@ -30,8 +30,8 @@ Usually it looks like the following:
 | source         | str    | `""`    |             |
 | skip_seconds   | uint32 | `0`     | Skips the audio by given seconds at the beginning |
 | cache          | bool   | `false` |             |
-| cloud_ruid     | str    | `""`    |             |
-| cloud_auth     | str    | `""`    |             |
+| cloud_ruid     | str    | `""`    | Contains the ID of the given Tonie. This is needed to request the content from boxine cloud. You can enable `Dump rUID/auth` in teddycloud to fill in the ruid when placing a Tonie. |
+| cloud_auth     | str    | `""`    | Contains the content password of the given Tonie. This is needed to request the content from boxine cloud. You can enable `Dump rUID/auth` in teddycloud to fill in the password when placing a Tonie. |
 | cloud_override | bool   | `false` |             |
 | tonie_model    | str    | `""`    |             |
 | _version       | uint32 | `5`     |             |
@@ -39,4 +39,4 @@ Usually it looks like the following:
 ## Examples
 
 * Custom audiobooks that you added to Teddycloud (no official Tonies) typically will have `nocloud` enabled
-* You can download content right from an URL by setting the `source`. In combination with `nocloud` you can easily set up custom content
+* You can download content right from an URL by setting the `source`. In combination with `nocloud` you can easily set up custom content. The custom content will be downloaded to your Toniebox when triggering a content update (long press one of the volume-ears).
