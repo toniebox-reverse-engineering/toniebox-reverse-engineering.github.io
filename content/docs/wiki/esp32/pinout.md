@@ -49,12 +49,12 @@ description: ""
 | 41 | GPIO36 | DAT0 | SD | |
 | 42 | GPIO37 | DAT1 | SD | |
 | -- | -- | -- | -- | -- |
-| 43 | GPIO38 | CMD | SD | J101 |
-| 44 | MTCK | TCK | JTAG | J101 |
-| 45 | MTDO | TD0 | JTAG | J101 |
+| 43 | GPIO38 | CMD | SD | J102 |
+| 44 | MTCK | TCK | JTAG | J102 |
+| 45 | MTDO | TD0 | JTAG | J102 |
 | 46 | VDD3P3_CPU | | | |
-| 47 | MTDI | TDI | JTAG | J101 |
-| 48 | MTMS | TMS | JTAG | J101 |
+| 47 | MTDI | TDI | JTAG | J102 |
+| 48 | MTMS | TMS | JTAG | J102 |
 | 49 | U0TXD | TX | UART | J103 |
 | 50 | U0RXD | RX | UART | J103 |
 | 51 | GPIO45 | Power | LIS + DAC + Blue-LED | High = Power on |
