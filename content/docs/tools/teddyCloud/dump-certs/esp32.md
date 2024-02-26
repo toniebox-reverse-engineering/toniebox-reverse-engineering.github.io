@@ -26,6 +26,8 @@ mv certs/client/PRIVATE.DER certs/client/private.der
 mv certs/client/CA.DER certs/client/ca.der
 ```
 
+Be sure, that the dump is okay and you are able to extract the certificates. 
+
 ![Read flash](/img/esp32_read_flash_webui.png)
 
 ![Finished reading the flash/hostname](/img/esp32_read_flash_finished_webui.png)
@@ -50,5 +52,7 @@ cp certs/client/esp32/CLIENT.DER certs/client/esp32-fakeca/
 cp certs/client/esp32/PRIVATE.DER certs/client/esp32-fakeca/
 cp certs/server/ca.der certs/client/esp32-fakeca/CA.DER
 ```
+
+Be sure, that the dump is okay and you are able to extract the certificates. 
 
 [Please continue with flash CA step for the ESP32](../../flash-ca/esp32)
