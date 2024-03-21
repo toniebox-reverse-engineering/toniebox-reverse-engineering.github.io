@@ -29,4 +29,26 @@ esptool.py -b 921600 write_flash 0x0 tb.esp32.fakeca.bin
 ![Flash ESP32 Image](/img/esp32_write_patched_image_with_esptools.png)
 
 
-[Please continue with DNS step for the ESP32](../../dns/esp32)
+Set the hostname/IP via commandline
+```
+# copy firmware backup
+cp tb.esp32.fakeca.bin tb.esp32.fakeca.IP.bin
+# inject new IP into firmware
+teddycloud ESP32HOST tb.esp32.fakeca.IP.bin 192.168.178.49
+# Fix the firmware, otherwise the TonieBox hang in a reboot loop
+teddycloud ESP32FIXUP tb.esp32.fakeca.IP.bin
+# flash firmware with new IP
+esptool.py -b 921600 write_flash 0x0 tb.esp32.fakeca.IP.bin
+```
+
+The output after injection of the hostname/IP should include the following lines
+```
+INFO |esp32.c:0990:esp32_patch_host()| Patching hostnames in 'tb.esp32.fakeca.IP.bin'
+INFO |esp32.c:1038:esp32_patch_host()|  replaced RTNL host 2 times
+INFO |esp32.c:1040:esp32_patch_host()|  replaced API host 2 times
+
+```
+If it states `0 times` than the hostname/IP is already changed (maybe to another value). ESP32HOST does only works on fwirmware with the original hostnames, as it does some search & replace.
+
+
+Alternatively, your Fritz.Box can configured to return your TeddyCloud IP during domain name resolution: [Domain Name resolution](../../dns/esp32)
