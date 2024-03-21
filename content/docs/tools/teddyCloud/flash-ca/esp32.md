@@ -5,7 +5,7 @@ description: ""
 
 # ESP32
 ## Browser based
-With teddyCloud you can also write a new image with your custom CA and a DNS/IP so the box connects to teddyCloud.
+With teddyCloud you can also write a new image with your custom CA and a hostname/IP so the box connects to teddyCloud.
 If you have a Fritzbox you can set it to tc.fritz.box (see CC3200 how to configure the hostname on your Fritzbox), if not set it to the IP of teddyCloud.
 
 Check, that your backup of your flash is okay and you were able to extract the certificates. 
