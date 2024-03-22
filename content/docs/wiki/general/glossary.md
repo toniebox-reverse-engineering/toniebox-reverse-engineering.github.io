@@ -8,8 +8,8 @@
 | boxine cloud    | a server where your Toniebox downloads its contents from and logs every action|
 | [TeddyBench](https://github.com/toniebox-reverse-engineering/teddy)      | is a tool to convert audio files to play on your Toniebox|
 | [TeddyCloud](https://github.com/toniebox-reverse-engineering/teddycloud)      | is a locally hosted server that replaces the boxine cloud |
-| Hackiebox       | a custom firmware for your Toniebox (discontinued) |
-| HackieboxNG     | a custom bootloader and firmware for your Toniebox (firmware not released yet)|
+| Hackiebox       | a custom firmware for your Toniebox (development discontinued) |
+| HackieboxNG     | a custom bootloader for your Toniebox |
  
  
 
