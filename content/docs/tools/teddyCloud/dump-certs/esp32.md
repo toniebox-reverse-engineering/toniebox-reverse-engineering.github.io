@@ -4,7 +4,7 @@ description: ""
 ---
 
 # ESP32
-You can extract the flash memory via the debug port of the box and the esptool. Keep your backup! Please use a recent version of esptool. (>v4.4)
+You can extract the flash memory via the debug port of the box and the esptool. Keep your backup! Please use a recent version of [esptool](https://github.com/espressif/esptool). (>v4.4)
 Please connect the jumper J100 (Boot) and reset the box to put it into the required UARTmode. Connect your 3.3V UART to J103 (TxD, RxD, GND).
 ![J103 Pinout](/img/tb-esp32-uart.jpg)
 
