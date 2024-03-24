@@ -28,7 +28,7 @@ Usually it looks like the following:
 |----------------|--------|---------|-------------|
 | live           | bool   | `false` | Always start the content from the beginning and redownload its content |
 | nocloud        | bool   | `false` | Do not sync the TAF with the boxine cloud |
-| source         | str    | `""`    | Convert this file into a TAF, when the box requests content (everything ffmpeg can decode, maybe files or webradio) |
+| source         | str    | `""`    | Use this TAF as content or convert this file into a TAF, when the box requests content (everything ffmpeg can decode, files or urls for webradio) |
 | skip_seconds   | uint32 | `0`     | Skips the audio by given seconds (source) |
 | cache          | bool   | `false` | Do not delete the TAF converted via `source` after sending it |
 | cloud_ruid     | str    | `""`    | rUID of the Tonie. Enable `Dump rUID/auth` in teddyCloud to fill in the rUID when placing a Tonie. This can also be used to reroute a tag to a different one or download a Tonie via the webinterface by clicking on the download icon beside the json. (cloud_auth needed)|
