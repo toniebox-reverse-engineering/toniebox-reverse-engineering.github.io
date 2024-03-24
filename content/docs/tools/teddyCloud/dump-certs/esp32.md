@@ -17,7 +17,7 @@ After that you can manually extract them into the ```/certs/client/``` directory
 # Please check the filename of your backup
 # Be sure you are in the teddycloud directory
 # cd /teddycloud/ # just for docker
-teddycloud ESP32CERT extract data/firmware/ESP32_<mac>.bin certs/client
+teddycloud --esp32-extract data/firmware/ESP32_<mac>.bin --destination certs/client
 ```
 Please check the filename of the extracted certs, especially the case! Change them to lowercase if they are uppercase.
 ```
@@ -40,7 +40,7 @@ Be sure, that the dump is okay and you are able to extract the certificates.
 esptool.py -b 921600 read_flash 0x0 0x800000 tb.esp32.bin
 # extract certficates from firmware
 mkdir certs/client/esp32
-teddycloud ESP32CERT extract tb.esp32.bin certs/client/esp32
+teddycloud --esp32-extract tb.esp32.bin --destination certs/client/esp32
 # Copy box certificates to teddyCloud
 cp certs/client/esp32/CLIENT.DER  certs/client/client.der
 cp certs/client/esp32/PRIVATE.DER  certs/client/private.der
