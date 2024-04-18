@@ -20,8 +20,8 @@ If you're utilizing alternative NAS/server hardware configurations, your contrib
 ## Tested Hardware, but not supporting TeddyCloud
 
 
-| NAS / Server hardware | Comment/Discussion/Links                                                                            |
-|-----------------------|-----------------------------------------------------------------------------------------------------|
-| Raspberry Pi Zero     | https://forum.revvox.de/t/hardware-requirements-does-teddycloud-run-on-a-raspberry-zero-1st-gen/309 |
+| NAS / Server hardware | Comment/Discussion/Links                                                                                                                                                       |
+|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Raspberry Pi Zero     | Probably more of a Docker compatibility issue than TeddyCloud related, see https://forum.revvox.de/t/hardware-requirements-does-teddycloud-run-on-a-raspberry-zero-1st-gen/309 |
 
 If you've attempted to deploy TeddyCloud on specialized hardware without success, we encourage you to share your experience for community contribution. Conversely, if you've successfully implemented TeddyCloud on any of the mentioned hardware platforms, we invite you to document your process on our forum. Additionally, you're welcome to transition your system to one of the officially supported configurations.
