@@ -17,6 +17,7 @@ You'll need the ```flash:/cert/ca.der``` (Boxine CA), ```flash:/cert/client.der`
 Keep a backup of the certificates, especially the client.der and private.der. Without it you won't be able to connect to the cloud anymore!
 
 ## Device specific
+To be able to dump the certificates, you need to open the toniebox. Instructions for that can be found on [iFixit](https://www.ifixit.com/Guide/Toniebox+Opening+Procedure/124139).
 As the dumping process is different for each type of box, continue with the device specific step for your device: 
 * [CC3200](cc3200)
 * [CC3235](cc3235)
