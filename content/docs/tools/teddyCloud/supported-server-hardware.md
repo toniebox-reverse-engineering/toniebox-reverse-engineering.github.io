@@ -8,13 +8,13 @@ bookCollapseSection: true
 Teddycloud is supported on nearly all servers utilizing the x86_64, arm64, and armhf (linux/arm/v7) architectures, as Docker containers are available for these platforms.
 Below is a compilation of NAS/server hardware that has been successfully utilized to host TeddyCloud:
 
-| NAS / Server hardware           | Limitations                                                                                                                                                                 |
-|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Raspberry Pi 4                  | -                                                                                                                                                                           |
-| Raspberry Pi Zero 2             | slow on initial startup (expect 20 minutes and more for initial certificate creation!), encoding also very slow, possible crashes in some situations, but in general usable |
-| Synology NAS DS923+ (DSM 7.2.1) | -                                                                                                                                                                           |
-| Raspberry Pi Zero               | Docker installation a little bit tricky, see https://forum.revvox.de/t/hardware-requirements-does-teddycloud-run-on-a-raspberry-zero-1st-gen/309                            |
-| ...                             |                                                                                                                                                                             |
+| NAS / Server hardware           | Limitations                                                                                                                                                                                        |
+|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Raspberry Pi 4                  | -                                                                                                                                                                                                  |
+| Raspberry Pi Zero 2             | slow on initial startup (expect 20 minutes and more for initial certificate creation!), encoding also very slow, possible crashes in some situations, but in general usable                        |
+| Synology NAS DS923+ (DSM 7.2.1) | -                                                                                                                                                                                                  |
+| Raspberry Pi Zero               | Docker installation is a little bit tricky, getting it running could take some extra steps see https://forum.revvox.de/t/hardware-requirements-does-teddycloud-run-on-a-raspberry-zero-1st-gen/309 |
+| ...                             |                                                                                                                                                                                                    |
 
 Consider using Alpine container instead of Ubuntu / Debian container if your server has limited resources.
 
