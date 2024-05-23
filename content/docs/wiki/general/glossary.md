@@ -11,7 +11,8 @@
 | Tonie           | the figurine that you place on the Toniebox        |
 | Toniebox        | the beloved child’s audio player       |
 | tonies          | Tonies SE is the brand that sells the Toniebox |
-
+| [TAF](https://tonies-wiki.revvox.de/docs/wiki/general/audio-file-format/) | Toniebox Audio File |
+| [TAP](https://tonies-wiki.revvox.de/docs/tools/teddycloud/playlist-tap-json/) | Toniebox Audio Playlist |
  
  
 
