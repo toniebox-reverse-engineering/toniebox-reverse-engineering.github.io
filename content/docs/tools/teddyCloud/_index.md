@@ -12,10 +12,21 @@ to host your own figurine audio files on e.g. your [NAS or any other server](sup
 You can also use teddyCloud on the command line to manipulate esp32 firmware dumps or encode Tonie Audio Files (TAFs). See ```toniecloud --help```.
 
 ## Docker hints
+
+### General
 The docker container automatically generates the server certificates on first run. You can extract the ```certs/server/ca.der``` for your box after that. 
 
 An example [docker-compose.yaml can be found within the docker subdir.](https://github.com/toniebox-reverse-engineering/teddycloud/blob/master/docker/docker-compose.yaml)
 Please beware that port 443 cannot be remapped and you cannot use a reverse proxy like nginx or traefik without passing through the TLS (complex, not recommended). The client certificate authentication needs to be done by teddyCloud. Also, there is no SNI. If you are using docker, you can use macvlan to give the teddyCloud container a dedicated IP address (recommended).
+
+### Windows Quick Start
++ Get https://www.docker.com/products/docker-desktop/
++ Get the files which you can find [here](https://github.com/toniebox-reverse-engineering/teddycloud/blob/master/docker/windows)
++ Place the files in your desired directory
++ Open Windows Terminal, go to that directory, type
+  `docker compose up`
++ That should create a fully running instance of teddyCloud with all data in your desired directory
++ Make sure that windows firewall is not blocking the packets to port 80 and 443 (for test/troubleshooting purpose i suggest to deactivate it)
 
 ## Preparation
 Please connect your Toniebox to your Wi-Fi and update its firmware. Many boxes are shipped with a production firmware that needs to be updated. Otherwise the box won't work as it should. It is not necessary to connect the box to the mytonies app/account. [Connect the box without the setup assistant.](https://support.tonies.com/hc/en-us/articles/4415294030482-How-do-I-set-up-a-Wi-Fi-connection-without-the-setup-assistant)
