@@ -21,6 +21,8 @@ This error can also happen if the box tries to reach the boxine cloud. Check the
 
 Alternativly you may use a reverse proxy like nginx or traefik between teddyCloud and your box. This is not supported, teddyCloud needs its own dedicated IP address.
 
+Check also if the port 443 on your teddyCloud instance is reachable. Is the port active in docker and firewall doesn't block it?
+
 Example log output:
 ```
 INFO |server.c:0574:server_init()| 1 open HTTPS connections
