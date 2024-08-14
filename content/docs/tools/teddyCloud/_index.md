@@ -8,7 +8,7 @@ bookCollapseSection: true
 ## Features
 teddyCloud is an alternative server for your Toniebox, allowing you to host the cloud services locally.
 This gives you the control about which data is sent to the original manufacturer's cloud and allows you
-to host your own figurine audio files on e.g. your [NAS or any other server](supported-server-hardware). 
+to host your own figurine audio files on e.g. your [NAS or any other server](setup/supported-server-hardware). 
 You can also use teddyCloud on the command line to manipulate esp32 firmware dumps or encode Tonie Audio Files (TAFs). See ```toniecloud --help```.
 
 ## Docker hints
@@ -22,12 +22,12 @@ Please connect your Toniebox to your Wi-Fi and update its firmware. Many boxes a
 
 ## Device specific preparation
 Please check wether you got a Toniebox with a CC3200, CC3235 or ESP32 and continue with the following steps:
-* [Dump CA and client certificates](dump-certs)
-* [Flash the replacement CA](flash-ca)
-* [DNS](dns)
+* [Dump CA and client certificates](setup/dump-certs)
+* [Flash the replacement CA](setup/flash-ca)
+* [DNS](setup/dns)
 
 ## Test & Troubleshooting
-If you have problems with teddyCloud or just want to be sure everything works as it should, please check our [Test & Troubleshooting site](test-troubleshooting).
+If you have problems with teddyCloud or just want to be sure everything works as it should, please check our [Test & Troubleshooting site](setup/test-troubleshooting).
 
 ## Additional
 
