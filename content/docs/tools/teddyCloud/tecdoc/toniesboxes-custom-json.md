@@ -14,7 +14,7 @@ Initially the tonieboxes-custom-json file looks like the following:
 
 After adding the meta information of your customized Toniebox the tonieboxes-custom-json file looks like this (more details see below in section [Specification](#specification)):
 
-```
+```json
 [{
     "id": "11-0001",
     "name": "Customized Toniebox Teddycloud Limited Edition",

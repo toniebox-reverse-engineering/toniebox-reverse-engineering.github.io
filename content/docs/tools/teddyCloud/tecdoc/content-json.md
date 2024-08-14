@@ -8,7 +8,7 @@ Toniecloud uses the content-json file to save some data and control the behaviou
 
 Usually it looks like the following:
 
-```
+```json
 {
 	"live":	false,
 	"nocloud":	false,

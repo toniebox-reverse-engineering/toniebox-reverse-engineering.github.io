@@ -25,7 +25,7 @@ _new /web gui_
 
 Enriched with metadata for the above shown custom tag the tonies-custom-json file looks like this (more details see below in section [Specification](#specification)):
 
-```
+```json
 [{"no": "0", "model": "123456", "audio_id": ["369519776"], "hash": ["af9e61a9c1b12138fb060908d595742334b04515"], "title": "Custom Tonie Example Title", "series": "Custom Tonies", "episodes": "This is my custom tonie", "tracks": ["Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6", "Title 7", "Title 8", "Title 9", "Title 10"], "release": "0", "language": "de-de", "category": "custom", "pic": "https://upload.wikimedia.org/wikipedia/en/6/6b/Hello_Web_Series_%28Wordmark%29_Logo.png"}]
 ```
 
