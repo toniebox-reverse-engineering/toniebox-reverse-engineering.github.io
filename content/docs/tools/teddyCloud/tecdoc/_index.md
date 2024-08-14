@@ -1,5 +1,5 @@
 ---
-title: "CC3200"
+title: "Technical Docs"
 bookCollapseSection: true
 headless: true
 ---

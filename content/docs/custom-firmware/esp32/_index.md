@@ -1,7 +1,5 @@
 ---
 title: "ESP32"
-description: "Start and read!"
+headless: true
 bookCollapseSection: true
 ---
-
-Test
