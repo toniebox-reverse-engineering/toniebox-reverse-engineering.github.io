@@ -49,7 +49,7 @@ cc3200tool -p COM3 write_file flash/sys/mcuimg.bin /sys/mcuimg.bin
 cc3200tool -p COM3 read_file /sys/mcuimg.bin mcuimg.bin write_file mcuimg.bin /sys/pre-img.bin write_file flash/sys/mcuimg.bin /sys/mcuimg.bin
 ```
 
-#### Dumping the original firmware
+#### Dumping the original firmware (optional)
 The box saves up to 3 different versions of the OFW. It can be found flash:/sys/mcuimgN.bin (replace N with 1, 2 or 3). A command to dump all three versions would be:
 ```
 cc3200tool -p COM3 read_file /sys/mcuimg1.bin mcuimg1.bin read_file /sys/mcuimg2.bin mcuimg2.bin read_file /sys/mcuimg3.bin mcuimg3.bin
