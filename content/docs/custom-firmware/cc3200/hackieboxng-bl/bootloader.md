@@ -19,7 +19,7 @@ It should be installed as primary bootloader for HackieboxNG to flash:/sys/mcuim
 ## Bootloader (Stage 2)
 ![Start process bootloader](/img/HBNG-SDBootloader.png)
 
-When no ear is pressed, the bootloader loads the selected standard bootslot. If you hold the big ear while booting you may select a different slot by pressing the small ear for a short moment. Only slots with a file on the sd card can be selected. You may use them in a different way and change the settings within the configuration. The selected slot is indicated by 1-3 blinks in a color assigned to each group. Following slots are available:
+When no ear is pressed, the bootloader loads the selected standard bootslot. If you hold and keep the big ear pressed while booting you may select a different slot by pressing the small ear for a short moment. Then release the big ear to boot. Only slots with a file on the sd card can be selected. You may use them in a different way and change the settings within the configuration. The selected slot is indicated by 1-3 blinks in a color assigned to each group. Following slots are available:
 
 Filepath: sd:/revvox/boot/ng-*XXXY*.bin
 
@@ -40,6 +40,7 @@ Filepath: sd:/revvox/boot/ng-*XXXY*.bin
 
 ### Additional
 The first two slots **ofw1** and **ofw2** are special, as they do not boot from microSD. Slot **ofw1** boots from `flash:/sys/pre-img.bin` and slot **ofw2** simulates the ofw bootloader, but allows patching. If you want to run a patched OFW using **ofw2** is recommended. As standard **ofw1** is set and booted. Change `activeImg` to **ofw2** if you want to boot **ofw2** on startup.
+If slot **ofw1** is not selectable, writing flash:/sys/pre-img.bin may have failed. 
 
 
 ***All error codes for the bootloader are in green.***
