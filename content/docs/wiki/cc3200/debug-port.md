@@ -33,13 +33,15 @@ The debug port runs on `3.3 V`
 
 # Tag-Connector for debug port
 
-To connect to the debug port a Tag-Connector can be used.
+To connect to the debug port a Tag-Connector can be used, a fitting PCB clip or small wires / resistors
 
 Datasheet: [Tag Connect TC2050-IDC-NL](https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2050-IDC-NL_Datasheet_8.pdf)
 
 Available at: [Tag Connect TC2050-IDC-NL](https://www.tag-connect.com/product/tc2050-idc-nl-10-pin-no-legs-cable-with-ribbon-connector)
 
 Alternative (cheaper): [PCB Clip 1.27mm 5 Pin Double Row](https://aliexpi.com/xJQX)
+
+Using [0.35mm 0-ohm resistors or wire](https://forum.revvox.de/t/0-35mm-resistor-wires-as-tag-connect-alternative-tc2050/214)
 
 # Boot Mode
 The CC3200 device implements a sense-on-power (SoP) scheme to switch between two modes that are available within the Tonie project. (To switch between the boot modes a restart of the device is needed.) [CC3200 datasheet 5.9.3](http://www.ti.com/lit/ds/symlink/cc3200.pdf)
