@@ -37,7 +37,3 @@ Changes affecting the toniebox (volume, LED) which are made through this interfa
 
 ### Content (Legacy)
 Please put your content into the ```/data/content/default/``` in the same structure as on your toniebox. You can edit ```500304E0.json``` file beside the content files to mark them as live or you can prevent the usage of the Boxine cloud for that tag with the nocloud parameter. By setting a source teddyCloud can stream any content that ffmpeg can decode (urls and files). Please check that the file and folders in upper case. If not rename them, otherwise teddyCloud won't serve them to the box!
-
-## Links
-* [GitHub](https://github.com/toniebox-reverse-engineering/teddycloud)
-* [Releases](https://github.com/toniebox-reverse-engineering/teddycloud/releases)
