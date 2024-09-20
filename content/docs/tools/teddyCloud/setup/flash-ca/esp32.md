@@ -12,21 +12,21 @@ Check, that your backup of your flash is okay and you were able to extract the c
 
 If you successfully read or load the flash of your Toniebox, the patching step is shown. Enter the hostname/ip of your teddyCloud instance. You can now also enter the WiFi credentials. To proceed click [Patch].
 
-![Patching the flash/hostname/wifi](/img/esp32_newgui_flashing_02_patchflash.png)
+![Patching the flash/hostname/wifi](/img/esp32_gui_flashing_02_patchflash.png)
 
 After the flash is patched, you can proceed with the actuall flashing. Till this step nothing happens to your Toniebox. 
 
-![Flash you Toniebox](/img/esp32_newgui_flashing_03_initialflash.png)
+![Flash you Toniebox](/img/esp32_gui_flashing_03_initialflash.png)
 
 To flash the patched firmware on your Toniebox, disconnect your Toniebox first from your powersource, click [Flash ESP32], confirm the dialog and immediatly connect to powersource again.
 
-![Confirm flashing](/img/esp32_newgui_flashing_04_confirmflash.png)
+![Confirm flashing](/img/esp32_gui_flashing_04_confirmflash.png)
 
-![Flashing in progress](/img/esp32_newgui_flashing_05_flashing.png)
+![Flashing in progress](/img/esp32_gui_flashing_05_flashing.png)
 
 If the flashing was successful, you can download the unpatched and patched Firmware for your backup.
 
-![Flashing done](/img/esp32_newgui_flashing_06_flashingdone.png)
+![Flashing done](/img/esp32_gui_flashing_06_flashingdone.png)
 
 
 ## Legacy
