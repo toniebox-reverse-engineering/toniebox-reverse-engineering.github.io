@@ -28,6 +28,7 @@ If the flashing was successful, you can download the unpatched and patched Firmw
 
 ![Flashing done](/img/esp32_gui_flashing_06_flashingdone.png)
 
+You can now also extract and place the certificates automatically.
 
 ## Legacy
 Replace the original CA within your flash dump with esptool.

@@ -23,6 +23,9 @@ If the flash is read sucessfully, you can download the unpatched firmware.
 
 ![Flash successfully read](/img/esp32_gui_flashing_02_patchflash.png)
 
+
+_(Optionally as you can do it automatically at the end of the flashing process!)_
+
 After that you can manually extract the certificates into the ```/certs/client/``` directory. You can either do that with the teddycloud executable on your computer or you may do it via the docker shell `docker exec -it <container-name> bash`.
 ```
 # Please check the filename of your backup
