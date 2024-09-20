@@ -1,6 +1,6 @@
 ---
 title: "teddyBench"
-description: "Start and read!"
+description: "Start and read to setup teddyBench!"
 ---
 # teddyBench
 With this tool you can dump existing files of the famous audio box or create custom ones.

@@ -10,9 +10,24 @@ If you have a Fritzbox you can set it to tc.fritz.box (see CC3200 how to configu
 
 Check, that your backup of your flash is okay and you were able to extract the certificates. 
 
-![Finished reading the flash/hostname](/img/esp32_read_flash_finished_webui.png)
+If you successfully read or load the flash of your Toniebox, the patching step is shown. Enter the hostname/ip of your teddyCloud instance. You can now also enter the WiFi credentials. To proceed click [Patch].
 
-![Patchimage](/img/esp32_patch_image_webui.png)
+![Patching the flash/hostname/wifi](/img/esp32_newgui_flashing_02_patchflash.png)
+
+After the flash is patched, you can proceed with the actuall flashing. Till this step nothing happens to your Toniebox. 
+
+![Flash you Toniebox](/img/esp32_newgui_flashing_03_initialflash.png)
+
+To flash the patched firmware on your Toniebox, disconnect your Toniebox first from your powersource, click [Flash ESP32], confirm the dialog and immediatly connect to powersource again.
+
+![Confirm flashing](/img/esp32_newgui_flashing_04_confirmflash.png)
+
+![Flashing in progress](/img/esp32_newgui_flashing_05_flashing.png)
+
+If the flashing was successful, you can download the unpatched and patched Firmware for your backup.
+
+![Flashing done](/img/esp32_newgui_flashing_06_flashingdone.png)
+
 
 ## Legacy
 Replace the original CA within your flash dump with esptool.
@@ -33,4 +48,6 @@ esptool.py -b 921600 write_flash 0x0 tb.esp32.fakeca.bin
 ![Flash ESP32 Image](/img/esp32_write_patched_image_with_esptools.png)
 
 
-[Please continue with DNS step for the ESP32](../../dns/esp32)
+Reassamble your Toniebox again. If you already set the teddyCloud hostname, you can skip the [DNS step for the ESP32](../../dns/esp32), if not [continue with DNS step for the ESP32](../../dns/esp32). 
+
+Your Toniebox should now be able to connect to your teddyCloud. Do a freshnesscheck and check if the box appears in the Toniebox management.
