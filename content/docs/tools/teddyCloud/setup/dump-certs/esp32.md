@@ -12,7 +12,18 @@ If connected with the Boot jumper, the box just start in "DOWNLOAD (USB/UART0)" 
 
 ## Browser based
 You can use the build in ESP32 box flashing tool in the webinterface of teddyCloud to backup your box with "Read ESP32".
-After that you can manually extract them into the ```/certs/client/``` directory. You can either do that with the teddycloud executable on your computer or you may do it via the docker shell `docker exec -it <container-name> bash`.
+
+![Initial Screen ESP32 flash](/img/esp32_newgui_flashing_00_initial.png)
+
+Click on [Read Flash]
+
+![Read flash](/img/esp32_newgui_flashing_01_readflash.png)
+
+If the flash is read sucessfully, you can download the unpatched firmware.
+
+![Flash successfully read](/img/esp32_newgui_flashing_02_patchflash.png)
+
+After that you can manually extract the certificates into the ```/certs/client/``` directory. You can either do that with the teddycloud executable on your computer or you may do it via the docker shell `docker exec -it <container-name> bash`.
 ```
 # Please check the filename of your backup
 # Be sure you are in the teddycloud directory
@@ -28,11 +39,7 @@ mv certs/client/CA.DER certs/client/ca.der
 
 Be sure, that the dump is okay and you are able to extract the certificates. 
 
-![Read flash](/img/esp32_read_flash_webui.png)
-
-![Finished reading the flash/hostname](/img/esp32_read_flash_finished_webui.png)
-
-
+[Please continue with flash CA step for the ESP32](../../flash-ca/esp32)
 
 ## Legacy
 ```

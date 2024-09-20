@@ -6,7 +6,7 @@ bookCollapseSection: true
 # Supported NAS/Server hardware
 
 Teddycloud is supported on nearly all servers utilizing the x86_64, arm64, and armhf (linux/arm/v7) architectures, as Docker containers are available for these platforms.
-Below is a compilation of NAS/server hardware that has been successfully utilized to host TeddyCloud:
+Below is a compilation of NAS/server hardware that has been successfully utilized to host teddyCloud:
 
 | NAS / Server hardware           | Limitations                                                                                                                                                                                        |
 |---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -22,11 +22,11 @@ Consider using Alpine container instead of Ubuntu / Debian container if your ser
 
 If you're utilizing alternative NAS/server hardware configurations, your contribution is welcome. Feel free to share your experience and insights with the community.
 
-## Tested Hardware, but not supporting TeddyCloud
+## Tested Hardware, but not supporting teddyCloud
 
 
 | NAS / Server hardware | Comment/Discussion/Links |
 |-----------------------|--------------------------|
 | ...                   |                          |
 
-If you've attempted to deploy TeddyCloud on specialized hardware without success, we encourage you to share your experience for community contribution. Conversely, if you've successfully implemented TeddyCloud on any of the mentioned hardware platforms, we invite you to document your process on our forum. Additionally, you're welcome to transition your system to one of the officially supported configurations.
+If you've attempted to deploy teddyCloud on specialized hardware without success, we encourage you to share your experience for community contribution. Conversely, if you've successfully implemented teddyCloud on any of the mentioned hardware platforms, we invite you to document your process on our forum. Additionally, you're welcome to transition your system to one of the officially supported configurations.

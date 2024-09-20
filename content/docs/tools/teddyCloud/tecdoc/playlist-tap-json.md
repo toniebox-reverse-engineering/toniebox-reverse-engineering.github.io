@@ -5,7 +5,7 @@ bookCollapseSection: true
 ---
 # Playlist Feature (TAP files)
 
-TeddyCloud supports basic playlist handling. A playlist file (TAP) can be linked to multiple sources, as long as it is supported by ffmpeg. 
+teddyCloud supports basic playlist handling. A playlist file (TAP) can be linked to multiple sources, as long as it is supported by ffmpeg. Please be aware: If you are adding TAF files, the chapters of them will get lost in the TAP!
 
 TAP files can be placed into library folder. The Tonies (from content folder) can then get assigned to any TAP file, just like it would be a normal TAF.
 
