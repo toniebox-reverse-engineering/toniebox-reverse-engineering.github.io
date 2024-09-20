@@ -1,6 +1,6 @@
 ---
 title: "teddyCloud"
-"teddyCloud is an open source replacement server for the tonies cloud."
+description: "teddyCloud is an open source replacement server for the tonies cloud."
 bookCollapseSection: true
 headless: true
 ---
