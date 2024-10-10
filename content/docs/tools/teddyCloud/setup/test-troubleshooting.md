@@ -5,7 +5,7 @@ bookCollapseSection: true
 ---
 # teddyCloud - Test & Troubleshooting
 ## Connection toniebox to teddyCloud
-First of all please be sure the cloud is not enabled in the webinterface. Then close all browser windows to teddyClouds webinterface and open the logs of teddyCloud. If you are using docker you can access them via: `docker logs teddyCloud`.
+First of all please be sure the cloud is not enabled in the webinterface. Then close all browser windows to teddyClouds webinterface and open the logs of teddyCloud. If you are using docker you can access them via: `docker logs teddycloud`.
 
 To be sure your toniebox can connect to teddyCloud we do a so called "freshnessCheck". This can be initiated by pressing one ear of the box until the LED is pulsing blue.
 
