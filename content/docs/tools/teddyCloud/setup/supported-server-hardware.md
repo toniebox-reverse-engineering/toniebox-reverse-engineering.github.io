@@ -16,6 +16,7 @@ Below is a compilation of NAS/server hardware that has been successfully utilize
 | Raspberry Pi Zero 2             | slow on initial startup (expect 20 minutes and more for initial certificate creation!), encoding also very slow, possible crashes in some situations, but in general usable                        |
 | Synology NAS DS923+ (DSM 7.2.1) | -                                                                                                                                                                                                  |
 | Raspberry Pi Zero               | Docker installation is a little bit tricky, getting it running could take some extra steps see https://forum.revvox.de/t/hardware-requirements-does-teddycloud-run-on-a-raspberry-zero-1st-gen/309 |
+| Raspberry Pi 1 Model A Rev 1.1  | Works with Raspberry Pi OS (32-Bit) and the teddycloud build for Alpine Linux (see https://github.com/toniebox-reverse-engineering/teddycloud/issues/225)                                          |
 | ...                             |                                                                                                                                                                                                    |
 
 Consider using Alpine container instead of Ubuntu / Debian container if your server has limited resources.
