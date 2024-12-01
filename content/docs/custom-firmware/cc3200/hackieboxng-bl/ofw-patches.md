@@ -20,9 +20,6 @@ If you want to use alternative tags those patches will help you. Even other iso1
 ### Block count >8 ([blockCheck.310.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/patch/blockCheck.310.json) / [blockCheck.307.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/patch/blockCheck.307.json))
 Usally the toniebox checks if the tag has exactly 8 blocks. The check allows the tag to have more than that. (ex. SLIX or SLIX2)
 
-### Block count <=8 ([blockCheckRemove.310.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/patch/blockCheckRemove.310.json) / [blockCheckRemove.308.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/patch/blockCheckRemove.308.json))
-Usally the toniebox checks if the tag has exactly 8 blocks. The check allows the tag to have less than that.
-
 ### No privacy password ([noPass3.310.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/patch/noPass3.310.json) / [noPass3.305.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/patch/noPass3.305.json))
 Usally doesn't allow tags without the boxine specific or the NXP specific privacy mode password. With the patch you can use tags without having privacy password support (ex. SLIX). It disables the rf field for a moment when the second privacy password failed. This patch uses the new dynamic patching engine to generate dynamic arm asm bytecode.
 
@@ -68,3 +65,8 @@ Usally doesn't allow tags without the boxine specific or the NXP specific privac
 
 ### Disable charger wakeup ([noChargWake.305.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/patch/noChargWake.305.json))
 The toniebox won't wakeup anymore if it is put onto the charger. **noChargWake.305 Doesn't work on 3.1.0-BF2 and higher. Box won't wakeup anymore** ***Attention, this patch is only working if you disconnect the battery for a second before loading the patched ofw. If you start the unpatched ofw once, you will have to disconnect the battery again***
+
+### Block count <=8 ([blockCheckRemove.310.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/patch/blockCheckRemove.310.json) / [blockCheckRemove.308.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/patch/blockCheckRemove.308.json))
+Usally the toniebox checks if the tag has exactly 8 blocks. The check allows the tag to have less than that.
+
+**This patch breaks the transfer of the authentication data to the cloud, this means downloading the content of the Tonies if using teddyCloud won't work and those Tonies will be marked as no-cloud**
