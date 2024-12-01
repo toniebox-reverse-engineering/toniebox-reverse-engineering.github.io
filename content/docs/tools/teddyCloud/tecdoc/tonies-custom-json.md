@@ -1,12 +1,12 @@
 ---
-title: "tonies-custom-json config"
-description: "Info about the tonies-custom-json file"
+title: "tonies.custom.json config"
+description: "Info about the tonies.custom.json file"
 bookCollapseSection: true
 ---
 # tonies.custom.json
-teddyCloud uses the tonies-custom-json file to read the metadata of custom tags in the same manner it's done for the official boxine tonies in the tonies-json file. The structure is the same, but it's not overwritten as the tonies-json file through regularly updates. So you can use the tonies-custom-json to save metadata of your own custom tags.
+teddyCloud uses the `tonies.custom.json` file from `config` folder to read the metadata of custom tags in the same manner it's done for the official boxine tonies in the `tonies.json` file. The structure is the same, but it's not overwritten as the `tonies.json` file through regularly updates. So you can use the `tonies.custom.json` to save metadata of your own custom tags.
 
-Initially the tonies-custom-json file looks like the following:
+Initially the `tonies.custom.json` file looks like the following:
 
 ```
 []
@@ -16,7 +16,7 @@ In the GUI, a custom tag looks initially like:
 
 ![GUI](/img/tonies-custom-json_empty.png)
 
-Enriched with metadata for the above shown custom tag the tonies-custom-json file looks like this (more details see below in section [Specification](#specification)):
+Enriched with metadata for the above shown custom tag the `tonies.custom.json` file looks like this (more details see below in section [Specification](#specification)):
 
 ```json
 [{"no": "0", "model": "123456", "audio_id": ["369519776"], "hash": ["af9e61a9c1b12138fb060908d595742334b04515"], "title": "Custom Tonie Example Title", "series": "Custom Tonies", "episodes": "This is my custom tonie", "tracks": ["Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6", "Title 7", "Title 8", "Title 9", "Title 10"], "release": "0", "language": "de-de", "category": "custom", "pic": "https://upload.wikimedia.org/wikipedia/en/6/6b/Hello_Web_Series_%28Wordmark%29_Logo.png"}]
@@ -33,7 +33,7 @@ This results after restart of teddyCloud in the following changed appearance in 
 
 ## Specification
 
-The tonies-custom-json file uses the JSON Array Structure.  It contains zero, one, or more ordered elements, separated by a comma. The JSON array is surrounded by square brackets [ ].
+The `tonies.custom.json` file uses the JSON Array Structure.  It contains zero, one, or more ordered elements, separated by a comma. The JSON array is surrounded by square brackets [ ].
 
 Each element consists of a JSON object with the following keys:
 
