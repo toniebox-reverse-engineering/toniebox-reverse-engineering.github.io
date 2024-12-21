@@ -14,7 +14,7 @@ Make sure, you have an IP address in your network, which does not get served by 
 
 In this example
 
-* the IP address 192.168.1.3 is reserved for teddycloud 
+* the IP address 192.168.1.3 is reserved for teddyCloud 
 * in a network 192.168.0.0/23
 * with the router having the address 192.168.0.1
 
@@ -41,7 +41,7 @@ After the Docker Macvlan network has been created, it can be used in the `docker
 
 ### Add Docker Macvlan network
 
-At the end of you `docker-compose.yaml` add the following lines to add the Docker Macvlan network:
+At the end of your `docker-compose.yaml` add the following lines to add the Docker Macvlan network:
 
 ```
 networks:
@@ -49,9 +49,9 @@ networks:
     external: true
 ```
 
-### Use Docker Macvlan in teddycloud service
+### Use Docker Macvlan in teddyCloud service
 
-Add the networks secion to your teddycloud service, which are the last three lines of the following snippet
+Add the networks secion to your teddyCloud service, which are the last three lines of the following snippet
 
 ```
 services:
