@@ -13,6 +13,8 @@ Here you find a list of working microSD cards for the box. It seems to be very p
 * 2GB SanDisk microSD
 * 32GB Micron microSDHC I 1
 * 32GB Perciron microSD (noname Aliexpress)
+## Samsung
+* 512GB Samsung EVO Plus microSDXC UHS-I Class 10 U3 (MB-MC512KA/EU)
 
 # Not Working
 ## Samsung
