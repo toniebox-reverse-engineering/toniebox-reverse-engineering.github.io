@@ -22,7 +22,7 @@ To ensure everyone can participate, please stick to English. Messages in other l
 ## Don'ts
 
 ### §5. No team tagging
-Don't tag the team for general questions. Replying is totally ok if we are already in the discussion. Also don
+Don't tag the team for general questions. Replying is totally ok if we are already in the discussion. 
 
 ### §6. No piracy
 Any requests or discussions related to piracy will result in an immediate ban.
@@ -35,6 +35,9 @@ If you're a merchant, clearly identify yourself and ask permission before sharin
 
 ### §9. Posting the same question in multiple places
 Please stick to the [Forum](https://forum.revvox.de) if you started there. Scattering the answers in [Telegram](https://t.me/toniebox_reverse_engineering) and Discource will make it hard for others to find the solution.
+
+### §10. No kidnapping of solved threads
+If you find a thread in our [Forum](https://forum.revvox.de) that seems to be solved, don't hijack it for your problem. It may look similar, but this will end up in chaos. Open your own thread!
 
 ## Helpful Tips
 - Use the search function before asking a question
