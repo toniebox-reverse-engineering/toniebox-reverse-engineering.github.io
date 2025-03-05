@@ -21,11 +21,11 @@ To ensure everyone can participate, please stick to English. Messages in other l
 
 ## Don'ts
 
-### §5. No team tagging
-Don't tag the team for general questions. Replying is totally ok if we are already in the discussion. 
-
-### §6. No piracy
+### §5. No piracy
 Any requests or discussions related to piracy will result in an immediate ban.
+
+### §6. No team tagging
+Don't tag the team for general questions. Replying is totally ok if we are already in the discussion. 
 
 ### §7. No general hacking
 This is not a community for general hacking. Questions like "Can you hack Instagram?" or "How to crack Candy Crush?" result in a ban.
