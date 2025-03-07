@@ -24,4 +24,16 @@ If you want to save the TAG-ID for later usage, please use a common NFC-Tag read
 If teddyCloud setup and TonieBox flashing is already done, you can continue with this step. 
 
 - Place the new custom NFC Tag for the first time on your TonieBox, it will give you an error code, but that is fine because we dont have assigned a custom play to it yet.
-- Check TonieBox User Interface
+- Check TonieBox User Interface: Now you should see a new custom tag:
+
+  ![GUI](/img/tonies-custom-json_empty.png)
+
+## 4. Assign Content
+Now you can assign content to the new custom tag. 
+- klick on "Edit" button
+- Choose a source out of your library, or clone a Tonie which you already own.
+- Klick on "save"
+- Press one ear of your TonieBox for 5 seconds, to do the refresh. Afterwards your new custom tag should work now.
+
+## 5. Change name and picture of custom tag
+
