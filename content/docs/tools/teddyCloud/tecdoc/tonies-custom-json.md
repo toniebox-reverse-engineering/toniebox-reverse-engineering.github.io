@@ -6,6 +6,8 @@ bookCollapseSection: true
 # tonies.custom.json
 teddyCloud uses the `tonies.custom.json` file from `config` folder to read the metadata of custom tags in the same manner it's done for the official boxine tonies in the `tonies.json` file. The structure is the same, but it's not overwritten as the `tonies.json` file through regularly updates. So you can use the `tonies.custom.json` to save metadata of your own custom tags.
 
+You can generate the needed JSON data via GUI (Edit Tag / Create new model) and save it in the `tonies.custom.json` file, or you can generate it by hand, described below.
+
 Initially the `tonies.custom.json` file looks like the following:
 
 ```
@@ -22,7 +24,11 @@ Enriched with metadata for the above shown custom tag the `tonies.custom.json` f
 [{"no": "0", "model": "123456", "audio_id": ["369519776"], "hash": ["af9e61a9c1b12138fb060908d595742334b04515"], "title": "Custom Tonie Example Title", "series": "Custom Tonies", "episodes": "This is my custom tonie", "tracks": ["Title 1", "Title 2", "Title 3", "Title 4", "Title 5", "Title 6", "Title 7", "Title 8", "Title 9", "Title 10"], "release": "0", "language": "de-de", "category": "custom", "pic": "https://upload.wikimedia.org/wikipedia/en/6/6b/Hello_Web_Series_%28Wordmark%29_Logo.png"}]
 ```
 
-This results after restart of teddyCloud in the following changed appearance in the GUI:
+**Note:** After you changed the `tonies.custom.json` file you need to reload it via TeddyCloud GUI ( Settings / Reload Tonies.json ) or restart the server.
+
+![GUI](/img/gui-tonies-reload-config.png)
+
+This results after reloading of the `tonies.custom.json` file in the following changed appearance in the GUI:
 
 
 ![Tonie Cards](/img/tonies-custom-json_filled1.png)
@@ -51,7 +57,7 @@ Each element consists of a JSON object with the following keys:
 | release        | `"0"`                                                                                       | currently unused |
 | language       | `"de-de"`                                                                                   | language code, will be shown in the gui if it's another language than the dominant one |
 | category       | `"custom"`                                                                                  | category of the custom tag, currently unused |
-| pic            | `"https://.../Logo.png"` | url of the picture which shall be shown as custom tag image in the GUI |
+| pic            | `"https://.../Logo.png"` | url of the picture which shall be shown as custom tag image in the GUI. If you stored a custom picture in custom_img folder in TeddyCloud, the link looks like this: "https://your-ip:your-port/custom_img/Logo.png" |
 
 ### How to get the Audio ID and the Hash value of a TAF
 
