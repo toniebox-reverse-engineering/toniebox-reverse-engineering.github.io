@@ -27,7 +27,7 @@ If you want to save the tag ID for later use, please use a common NFC tag reader
 ## 3. Place the new NFC tag on the Toniebox
 
 - Place the new custom NFC tag on your Toniebox for the first time. (The Toniebox will respond with an error code, but that's fine for now since no custom play has been assigned yet.)  
-- Check the teddyCloud GUI: You should now see a new custom tag:
+- Check the teddyCloud GUI: Filter for last played tags to find the unknown tag you recently placed on the Toniebox.
 
   ![GUI](/img/tonies-custom-json_empty.png)
 
