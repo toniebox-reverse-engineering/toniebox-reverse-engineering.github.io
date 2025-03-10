@@ -57,7 +57,7 @@ Each element consists of a JSON object with the following keys:
 | release        | `"0"`                                                                                       | currently unused |
 | language       | `"de-de"`                                                                                   | language code, will be shown in the gui if it's another language than the dominant one |
 | category       | `"custom"`                                                                                  | category of the custom tag, currently unused |
-| pic            | `"https://.../Logo.png"` | url of the picture which shall be shown as custom tag image in the GUI. In case of use of the custom image folder the path should be relative, like "/custom_img/…". |
+| pic            | `"https://.../Logo.png"` | url of the picture which shall be shown as custom tag image in the GUI. In case of use of the custom image folder the path should be relative, like "/custom_img/Logo.png". |
 
 ### How to get the Audio ID and the Hash value of a TAF
 
