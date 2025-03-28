@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Tonie Configuration Schema",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "live": {
+        "type": "boolean",
+        "default": false,
+        "description": "Always start the content from the beginning and redownload its content"
+      },
+      "nocloud": {
+        "type": "boolean",
+        "default": false,
+        "description": "Do not sync the TAF with the boxine cloud"
+      },
+      "source": {
+        "type": "string",
+        "default": "",
+        "description": "Use this TAF as content or convert this file into a TAF (supports any ffmpeg-decoded source)"
+      },
+      "skip_seconds": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 4294967295,
+        "default": 0,
+        "description": "Skips the audio by given seconds (source)"
+      },
+      "cache": {
+        "type": "boolean",
+        "default": false,
+        "description": "Do not delete the TAF converted via `source` after sending it"
+      },
+      "cloud_ruid": {
+        "type": "string",
+        "default": "",
+        "pattern": "^[0-9a-fA-F]*$",
+        "description": "rUID of the Tonie (hexadecimal string)"
+      },
+      "cloud_auth": {
+        "type": "string",
+        "default": "",
+        "description": "Content password of the Tonie"
+      },
+      "cloud_override": {
+        "type": "boolean",
+        "default": false,
+        "description": "Reroute a tag to a different one (requires cloud_ruid/cloud_auth)"
+      },
+      "tonie_model": {
+        "type": "string",
+        "default": "",
+        "description": "Identify the Tonie"
+      },
+      "_version": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 4294967295,
+        "default": 5,
+        "description": "Version of the file"
+      }
+    }
+  }
