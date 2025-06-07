@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Custom Tonie Configuration Schema",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "required": ["model", "series"],
+      "additionalProperties": false,
+      "properties": {
+        "no": {
+          "type": "string",
+          "examples": ["0"]
+        },
+        "model": {
+          "type": "string",          
+          "examples": ["123456"]
+        },
+        "audio_id": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^\\d+$"
+          },
+          "examples": [["369519776"]]
+        },
+        "hash": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-fA-F0-9]+$"
+          },
+          "examples": [["af9e6..b04515"]]
+        },
+        "title": {
+          "type": "string",
+          "examples": ["Custom Tonie Example Title"]
+        },
+        "series": {
+          "type": "string",
+          "examples": ["Custom Tonie"]
+        },
+        "episodes": {
+          "type": "string",
+          "examples": ["This is my custom tonie"]
+        },
+        "tracks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "examples": [["Title 1", "Title 2"]]
+        },
+        "release": {
+          "type": "string",
+          "examples": ["0"]
+        },
+        "language": {
+          "type": "string",
+          "pattern": "^[a-z]{2}-[a-z]{2}$",
+          "examples": ["de-de"]
+        },
+        "category": {
+          "type": "string",
+          "examples": ["custom"]
+        },
+        "pic": {
+          "type": "string",
+          "format": "uri",
+          "examples": ["https://.../Logo.png"]
+        }
+      }
+    }
+  }

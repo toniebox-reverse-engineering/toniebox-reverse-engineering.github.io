@@ -7,9 +7,37 @@ description: ""
 You can extract the flash memory via the debug port of the box and the esptool. Keep your backup! Please use a recent version of [esptool](https://github.com/espressif/esptool). (>v4.4)
 Please connect the jumper J100 (Boot) and reset the box to put it into the required UARTmode. Connect your 3.3V UART to J103 (TxD, RxD, GND).
 
+If you're unsure in which mode the ESP32 is starting:
+
+#### Normal startup mode
+
+LED blinking green, startup sound is played, Serial output:
+
+    ESP-ROM:esp32s3-20210327
+    Build:Mar 27 2021
+    rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+    SPIWP:0xee
+    mode:DIO, clock div:1
+    load:0x3fcd0108,len:0x118
+    load:0x403b6000,len:0xb90
+    load:0x403ba000,len:0x27f4
+    entry 0x403b61c4
+    + gibberish
+
+
+#### Download mode
+
+LED is off, no sound, Serial output:
+
+    ESP-ROM:esp32s3-20210327
+    Build:Mar 27 2021
+    rst:0x1 (POWERON),boot:0x0 (DOWNLOAD(USB/UART0))
+    waiting for download
+
+
 ![J103 Pinout](/img/tb-esp32-uart.jpg)
 
-If connected with the Boot jumper, the box just start in "DOWNLOAD (USB/UART0)" mode (Check with a serial monitor) and the LED will be off. Beware, if the serial monitor is open it will block esptool.py from accessing the esp. If you get a "BROWNOUT_RST" check your power supply / battery. "SPI_FAST_FLASH_BOOT" indicates a boot without the J100 jumper. 
+Beware, if the serial monitor is open it will block esptool.py from accessing the esp. If you get a "BROWNOUT_RST" check your power supply / battery. "SPI_FAST_FLASH_BOOT" indicates a boot without the J100 jumper. 
 
 ## Browser based
 You can use the build in ESP32 box flashing tool in the webinterface of teddyCloud to backup your box with "Read ESP32".

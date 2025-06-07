@@ -79,3 +79,7 @@ But the in experiments used encoder did not have an obvious feature to do this.
 # Audio file extraction with Linux OS
 - Remove Header of the file with ´dd bs=4096 skip=1 if=500304E0 of=trim.ogg´
 - then just use ffmpeg to convert it into mp3 ´ffmpeg -i trim.ogg done.mp3´
+
+# Audio file extraction with Windows
+- Remove Header of the file with: powershell -Command "$in = [System.IO.File]::OpenRead('00000000'); $out = [System.IO.File]::Create('trim.ogg'); $in.Seek(4096, 'Begin') | Out-Null; $in.CopyTo($out); $in.Close(); $out.Close()"
+- then just as in Linux use ffmpeg to convert it into mp3: ffmpeg -i "trim.ogg" -ar 44100 -ac 2 -b:a 96k -f mp3 -c:a libmp3lame "done.mp3"

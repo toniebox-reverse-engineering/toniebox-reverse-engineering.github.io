@@ -5,7 +5,7 @@ description: ""
 # Debug Port
 ## Position of debug port on Toniebox-PCB
 
-![/img/toniebox_pcb_debug_port.png](/img/toniebox_pcb_debug_port.png)
+![Image of the debug port on the CC3200 board, showing the position of the port.](/img/toniebox_pcb_debug_port.png)
 
 The debug port runs on `3.3 V`
 
@@ -15,7 +15,7 @@ The debug port runs on `3.3 V`
    1 2 3 4 5  
 ```
 
-![/img/debug_port_pin_out.png](/img/debug_port_pin_out.png)
+![Debug port with a number at each connection point.](/img/debug_port_pin_out.png)
 
 
 | Pin | Function | Comment               |
@@ -52,7 +52,11 @@ SOP2 (pin 9) high will activate the UART load mode to flash the system during de
 
 # Extract Firmware
 ## Introduction
-Grab your favourite USB-UART **3.3V** interface, recommending those with DTR or RTS port to automate board reset. You may also use a CC3200 Launchpad, but then you will need to reset it by hand. SOP2 need to be pulled high while reset to set the cc3200 into UART-Mode.
+Grab your favourite USB-UART **3.3V** interface, recommending those with DTR or RTS port to automate board reset. You may also use a CC3200 Launchpad, but then you will need to reset it by hand. SOP2 need to be pulled high while reset to set the cc3200 into UART-Mode.  
+You may have a UART to USB adapter that supports both 3.3V and 5V. In this case you should find a jumper on the board to select the correct mode. You can see examples of such jumpers here (but there are others.)  
+**In any case, make absolutely sure that 3.3V (often labelled 3v3) is set or you will frie your board!**
+
+![Jumper to select between 3.3 and 5 volts on a red PCB with a black pin base.](/img/uart_3v3-5V_jumper_black.jpg) ![Switch to select between 3.3 and 5 volts on a red PCB.](/img/uart_3v3-5V_jumper_switch.jpg) ![Jumper to select between 3.3 and 5 volts on a blue PCB with a yellow pin base.](/img/uart_3v3-5V_jumper_yellow.jpg)
 
 ## Toolset
 Use [cc3200tool](https://github.com/toniebox-reverse-engineering/cc3200tool) to extract the firmware. Just download it to your favorite location.
