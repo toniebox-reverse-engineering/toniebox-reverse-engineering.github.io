@@ -14,7 +14,7 @@ to host your own figurine audio files on e.g. your [NAS or any other server](sup
 
 ![teddyCloud Webinterface](/img/teddyCloudWebinterface.png)
 
-You can also use teddyCloud on the command line to manipulate esp32 firmware dumps or encode Tonie Audio Files (TAFs). See ```toniecloud --help```.
+You can also use teddyCloud on the command line to manipulate esp32 firmware dumps or encode Tonie Audio Files (TAFs). See ```teddycloud --help```.
 
 ## Links
 * [GitHub](https://github.com/toniebox-reverse-engineering/teddycloud)

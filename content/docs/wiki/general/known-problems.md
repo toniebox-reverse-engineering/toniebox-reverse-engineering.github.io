@@ -39,6 +39,14 @@ The box was plugged into power supply with more than 9V.
 * microSD defect?
 
 # cc3200tool related
+## raise CC3200Error("Timed out while waiting for ack")
+### Checks
+* Did you do the reset?
+* Did you connect Toniebox rst to UART dtr and use the --reset dtr parameter?
+* Which UART version are you using?
+### Solutions
+* Do not use a USB-C UART. They seems not to work reliable. Choose a mikro-USB version instead.
+
 ## raise CC3200Error("rx csum failed")
 ### Checks
 * Ground ok?
