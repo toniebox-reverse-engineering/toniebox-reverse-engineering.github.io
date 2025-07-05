@@ -23,7 +23,7 @@ Example:
 
 ```json
 {
-    "$schema": "{{< siteurl >}}teddyCloud/tecdoc/content-json-schema.json",
+ "$schema": "{{< siteurl >}}/teddyCloud/tecdoc/content-json-schema.json",
  "live": false,
  "nocloud": false,
  "source": "",
@@ -50,11 +50,11 @@ Add the following parts to the `settings.json`:
     "json.schemas": [
         {
             "fileMatch": ["tonies.custom.json"],
-            "url": "{{< siteurl >}}teddyCloud/tecdoc/tonies-custom-json-schema.json"            
+            "url": "{{< siteurl >}}/teddyCloud/tecdoc/tonies-custom-json-schema.json"            
         },
         {
             "fileMatch": ["tonieboxes.custom.json"],
-            "url": "{{< siteurl >}}teddyCloud/tecdoc/tonieboxes-custom-json-schema.json"
+            "url": "{{< siteurl >}}/teddyCloud/tecdoc/tonieboxes-custom-json-schema.json"
         }
     ]
 }
@@ -64,7 +64,7 @@ Add the following parts to the `settings.json`:
 
 ```json
 {
-  "$schema": "{{< siteurl >}}teddyCloud/tecdoc/plalist-tap-json-schema.json",
+  "$schema": "{{< siteurl >}}/teddyCloud/tecdoc/plalist-tap-json-schema.json",
   "type": "tap",
   "audio_id": 0,
   "filepath": "lib://by/tapID/radio.taf",
