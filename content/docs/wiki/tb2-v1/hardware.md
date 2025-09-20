@@ -25,13 +25,12 @@ description: ""
 | **823-A0 452n02 (NXP)** | NXP | Unclear, possibly PMIC or sub-chip, no clear assignment | No public datasheet |
 | **MIMXRT1061 DVL6B 1N00X CTQG2502B** | NXP | ARM Cortex-M7 MCU (RT1060 family) | [NXP MIMXRT1061 PDF] |
 | **Winbond W956A8MBYA5I 6331A5100ZV2 510PCA TWN** | Winbond | 512Mb DDR3 SDRAM | [Winbond W956A8MBYA5I PDF] |
-| **Rayson RS70B32G4 S15G F3010B AF14** | Rayson | High-speed relay/IC (barely public, possibly special chip) | No public datasheet |
+| **Rayson RS70B32G4 S15G F3010B AF14** | Rayson | 32GB 2.7V~3.6V eMMC 5.1 310/190 MB/s TFBGA-153(11.5x13) Memory (ICs) ROHS | [LCSC](https://www.lcsc.com/datasheet/C22375657.pdf) |
 | **Winbond 250128JYSQ 2518** | Winbond | 128Mb SPI NOR Flash | [Winbond W25Q128JVSQ PDF] |
 
 ## Notes \& Corrections
 
 - For the **823-A0 452n02** chip from NXP, it is most likely a custom part or a sub-module with no public datasheet available.
-- **Rayson RS70B32G4** is very likely a relay or interface chip from Rayson, but no public datasheet can be found.
 - All other chips are in the correct manufacturer families and the part numbers match the visible markings on the board.
 - The Winbond number **250128JYSQ** should correctly read as **W25Q128JVSQ**, which is the common Winbond 128Mb SPI Flash IC.
 - For the TI audio chip, **TAS2563** is very likely the correct assignment, as the ending numbers/appearance match. Datasheets for TAS2x63 and TAS2563 are relevant.
