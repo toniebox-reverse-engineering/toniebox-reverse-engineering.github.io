@@ -22,7 +22,7 @@ description: ""
 | :-- | :-- | :-- | :-- |
 | **TAS2X63 TI 458 AXGJ G3** | Texas Instruments | Audio amplifier (TAS2x63 series, very likely TAS2563) | [TI TAS2563 PDF] |
 | **IW416HNA1C KJ1GC.01 JEAD2509** | NXP | WiFi/Bluetooth transceiver (IW416 series) | [NXP IW416 PDF] |
-| **823-A0 452n02 (NXP)** | NXP | Unclear, possibly PMIC or sub-chip, no clear assignment | No public datasheet |
+| **823-A0 452n02 (NXP)** | NXP | power management IC  | https://www.nxp.com/docs/en/data-sheet/PM823.pdf page:45 |
 | **MIMXRT1061 DVL6B 1N00X CTQG2502B** | NXP | ARM Cortex-M7 MCU (RT1060 family) | [NXP MIMXRT1061 PDF] |
 | **Winbond W956A8MBYA5I 6331A5100ZV2 510PCA TWN** | Winbond | 512Mb DDR3 SDRAM | [Winbond W956A8MBYA5I PDF] |
 | **Rayson RS70B32G4 S15G F3010B AF14** | Rayson | 32GB 2.7V~3.6V eMMC 5.1 310/190 MB/s TFBGA-153(11.5x13) Memory (ICs) ROHS | [LCSC](https://www.lcsc.com/datasheet/C22375657.pdf) |
