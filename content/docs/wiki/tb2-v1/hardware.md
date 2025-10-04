@@ -45,7 +45,7 @@ description: ""
 [1]: https://www.ti.com/product/TAS2563
 [2]: https://www.nxp.com/products/IW416
 [3]: https://www.mouser.de/ProductDetail/NXP-Semiconductors/PM823UK-A0CZ?qs=TuK3vfAjtkVJFmQ7TAMyAw%3D%3D
-[4]: https://www.nxp.com/docs/en/data-sheet/IMXRT1060CEC.pdf
+[4]: https://www.nxp.com/part/MIMXRT1061DVL6A
 [5]: https://www.digikey.de/de/products/detail/winbond-electronics/W956A8MBYA5I/15181915
 [6]: https://www.lcsc.com/product-detail/C22375657.html?s_z=n_RS70B32G4
 [7]: https://www.lcsc.com/product-detail/C97521.html?s_z=n_25Q128JV
