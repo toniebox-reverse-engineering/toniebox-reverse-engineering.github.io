@@ -5,12 +5,12 @@ description: ""
 
 # Pictures (r1)
 ## Main PCB
-[![Top view](TB-MAIN_2.0.P_Top.png)](TB-MAIN_2.0.P_Top.png)
-[![Bottom view](TB-MAIN_2.0.P_Bottom.png)](TB-MAIN_2.0.P_Bottom.png)
+[![Top view](TB-MAIN_2.0.P_Top_small.png)](TB-MAIN_2.0.P_Top_small.png)
+[![Bottom view](TB-MAIN_2.0.P_Bottom_small.png)](TB-MAIN_2.0.P_Bottom_small.png)
 
 ## UX PCB
-[![Top](TB-UX-PCB_1.0.R_Top.png)](TB-UX-PCB_1.0.R_Top.png)
-[![Bottom](TB-UX-PCB_1.0.R_Bottom.png)](TB-UX-PCB_1.0.R_Bottom.png)
+[![Top](TB-UX-PCB_1.0.R_Top_small.png)](TB-UX-PCB_1.0.R_Top_small.png)
+[![Bottom](TB-UX-PCB_1.0.R_Bottom_small.png)](TB-UX-PCB_1.0.R_Bottom_small.png)
 
 
 
