@@ -2,41 +2,50 @@
 title: "Hardware"
 description: ""
 ---
+
 # Pictures (r1)
-## Board
+## Main PCB
+[![Top view](TB-MAIN_2.0.P_Top.png)](TB-MAIN_2.0.P_Top.png)
+[![Bottom view](TB-MAIN_2.0.P_Bottom.png)](TB-MAIN_2.0.P_Bottom.png)
+
+## UX PCB
+[![Top](TB-UX-PCB_1.0.R_Top.png)](TB-UX-PCB_1.0.R_Top.png)
+[![Bottom](TB-UX-PCB_1.0.R_Bottom.png)](TB-UX-PCB_1.0.R_Bottom.png)
 
 
-# Parts
 
-## TAS2X63 TI 458 AXGJ G3
-## NXP IW416HNA1C KJ1GC.01 JEAD2509
-## NXP 823-A0 452n02
-## MIMXRT1061 DVL6B 1N00X CTQG2502B
-## Winbond W956A8MBYA5I 6331A5100ZV2 510PCA TWN
-## Rayson RS70B32G4 S15G F3010B AF14
-## Winbond 250128JYSQ 2518
+# Testpoints
+
+| Testpoint | Function |
+| :-- | :-- |
+| **TP510** | Serial TX |
+| **TP511** | Serial RX? (no response) |
+| **TP512** | Serial GND |
 
 # Table
 
 | Chip Designation | Manufacturer | Function (Assumed) | Datasheet (PDF) |
 | :-- | :-- | :-- | :-- |
-| **TAS2X63 TI 458 AXGJ G3** | Texas Instruments | Audio amplifier (TAS2x63 series, very likely TAS2563) | [TI TAS2563 PDF] |
-| **IW416HNA1C KJ1GC.01 JEAD2509** | NXP | WiFi/Bluetooth transceiver (IW416 series) | [NXP IW416 PDF] |
-| **823-A0 452n02 (NXP)** | NXP | power management IC  | https://www.nxp.com/docs/en/data-sheet/PM823.pdf page:45 |
-| **MIMXRT1061 DVL6B 1N00X CTQG2502B** | NXP | ARM Cortex-M7 MCU (RT1060 family) | [NXP MIMXRT1061 PDF] |
-| **Winbond W956A8MBYA5I 6331A5100ZV2 510PCA TWN** | Winbond | 512Mb DDR3 SDRAM | [Winbond W956A8MBYA5I PDF] |
-| **Rayson RS70B32G4 S15G F3010B AF14** | Rayson | 32GB 2.7V~3.6V eMMC 5.1 310/190 MB/s TFBGA-153(11.5x13) Memory (ICs) ROHS | [LCSC](https://www.lcsc.com/datasheet/C22375657.pdf) |
-| **Winbond 250128JYSQ 2518** | Winbond | 128Mb SPI NOR Flash | [Winbond W25Q128JVSQ PDF] |
+| **TAS2X63 TI 458 AXGJ G3** | Texas Instruments | Audio amplifier (likely TAS2563) | [TI TAS2563 PDF][1] |
+| **IW418HNA1C** | NXP | Dual-band WiFi 4 + Bluetooth 5.2 | [NXP IW416 PDF][2] |
+| **823-A0** | NXP | PMIC – Dual 1.5A Buck + 525 mA LDO | [NXP PM823 PDF][3] |
+| **MIMXRT1061 DVL6B** | NXP | ARM Cortex-M7 MCU (RT1060 family) | [NXP MIMXRT1061 PDF][4] |
+| **W956A8MBYA5I** | Winbond | 64Mbit HyperRAM 200 MHz 35 ns | [Winbond W956A8MBYA5I PDF][5] |
+| **RS70B32G4S15G** | Rayson | 32GB eMMC 5.1 TFBGA-153 | [Rayson RS70B32G4S15G PDF][6] |
+| **W25Q128JVSIQ** | Winbond | 128Mbit SPI NOR Flash SOIC-8 | [Winbond W25Q128JVSIQ PDF][7] |
 
-## Notes \& Corrections
+# Notes & Corrections
 
-- For the **823-A0 452n02** chip from NXP, it is most likely a custom part or a sub-module with no public datasheet available.
-- All other chips are in the correct manufacturer families and the part numbers match the visible markings on the board.
-- The Winbond number **250128JYSQ** should correctly read as **W25Q128JVSQ**, which is the common Winbond 128Mb SPI Flash IC.
-- For the TI audio chip, **TAS2563** is very likely the correct assignment, as the ending numbers/appearance match. Datasheets for TAS2x63 and TAS2563 are relevant.
+- **TAS2X63** marking strongly suggests TI **TAS2563**, used for Class-D audio amplification.
+- **823-A0** refers to NXP’s PM823, a power management IC with integrated buck converters and LDO.
+- **W956A8MBYA5I** is a **64Mbit HyperRAM** with HyperBus interface.
+- **RS70B32G4S15G** is a 32GB eMMC 5.1 module.
+- **W25Q128JYSQ** marking corresponds to **W25Q128JVSIQ**, a 128Mbit SPI NOR Flash IC.
 
-1. **TI TAS2563**: https://www.ti.com/product/TAS2563[^1]
-2. **NXP IW416**: https://www.nxp.com/docs/en/data-sheet/IW416.pdf[^2]
-3. **NXP MIMXRT1061**: https://www.nxp.com/docs/en/data-sheet/IMXRT1060CEC.pdf[^3]
-4. **Winbond W956A8MBYA5I**: https://www.winbond.com/resource-files/w956a8mbya5i.pdf[^4]
-5. **Winbond W25Q128JVSQ**: https://www.winbond.com/resource-files/w25q128jv spi revc 02122019.pdf
+[1]: https://www.ti.com/product/TAS2563
+[2]: https://www.nxp.com/products/IW416
+[3]: https://www.mouser.de/ProductDetail/NXP-Semiconductors/PM823UK-A0CZ?qs=TuK3vfAjtkVJFmQ7TAMyAw%3D%3D
+[4]: https://www.nxp.com/docs/en/data-sheet/IMXRT1060CEC.pdf
+[5]: https://www.digikey.de/de/products/detail/winbond-electronics/W956A8MBYA5I/15181915
+[6]: https://www.lcsc.com/product-detail/C22375657.html?s_z=n_RS70B32G4
+[7]: https://www.lcsc.com/product-detail/C97521.html?s_z=n_25Q128JV
