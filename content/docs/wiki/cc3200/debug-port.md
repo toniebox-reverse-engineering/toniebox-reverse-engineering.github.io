@@ -52,7 +52,7 @@ SOP2 (pin 9) high will activate the UART load mode to flash the system during de
 
 # Extract Firmware
 ## Introduction
-Grab your favourite USB-UART **3.3V** interface, recommending those with DTR or RTS port to automate board reset. You may also use a CC3200 Launchpad, but then you will need to reset it by hand. SOP2 need to be pulled high while reset to set the cc3200 into UART-Mode.  
+Grab your favourite USB-UART **3.3V** interface, recommending those with DTR or RTS port to automate board reset. Please avoid USB-C UARTs as they were recently reported as not working as expected. You may also use a CC3200 Launchpad, but then you will need to reset it by hand. SOP2 need to be pulled high while reset to set the cc3200 into UART-Mode.  
 You may have a UART to USB adapter that supports both 3.3V and 5V. In this case you should find a jumper on the board to select the correct mode. You can see examples of such jumpers here (but there are others.)  
 **In any case, make absolutely sure that 3.3V (often labelled 3v3) is set or you will frie your board!**
 
