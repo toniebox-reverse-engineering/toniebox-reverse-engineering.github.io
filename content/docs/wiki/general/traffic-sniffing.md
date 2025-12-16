@@ -58,8 +58,9 @@ You can use mitmproxy, mitmweb or mitmdump. I prefered mitmweb
 ./mitmweb --verbose --web-host 0.0.0. --mode transparent --set client_certs=/root/client.pem --ssl-insecure -s /root/toniebox.cert-validity.py
 ```
 
-## Using wireshark over ssh
-You'll need to install tcpdump on you target system. I also disabled password auth for sudoing tcpdump.
+## Using Wireshark over SSH
+
+You'll need to install tcpdump on your target system. I also disabled password auth for sudoing tcpdump.
 ```
 $ nano /etc/sudoers.d/tcpdump
 
@@ -70,6 +71,32 @@ Attach pcap-group to tcpdump
 sudo chgrp pcap /usr/bin/tcpdump
 sudo chmod 750 /usr/bin/tcpdump
 ```
+
+### SSH key authentication
+For secure and convenient authentication, create a dedicated SSH key for remote capture:
+```
+ssh-keygen -t ed25519 -f ~/.ssh/wireshark_capture -C "wireshark remote capture"
+ssh-copy-id -i ~/.ssh/wireshark_capture.pub user@hackiebox
+```
+
+### Remote capture with sshdump (recommended)
+Wireshark includes **sshdump**, an extcap utility that captures packets from remote hosts over SSH directly within Wireshark's interface. This is the recommended cross-platform approach.
+
+Open Wireshark and look for **SSH remote capture** interfaces in the interface list. Double-click to configure:
+| Setting | Value |
+|---------|-------|
+| Remote SSH server address | `hackiebox` |
+| Remote SSH server port | `22` |
+| Remote interface | `ens19` |
+| Remote capture command | `tcpdump` |
+| Use sudo on the remote machine | enable |
+| Remote capture filter | `not port 22` |
+| Path to SSH private key | `~/.ssh/wireshark_capture` |
+
+- [Wireshark sshdump manual](https://www.wireshark.org/docs/man-pages/sshdump.html)
+- [Video tutorial: Remote Packet Capture with Wireshark](https://www.youtube.com/watch?v=jYuHS-2g0BM)
+
+### Using pipes (alternative)
 I suggest you to ssh once into your machine to confirm the signature. Then you can run wireshark over the command and then enter the password to start tcpdump
 ```
 ssh user@hackiebox sudo tcpdump -i ens19 -U -s0 -w - 'not port 22' | wireshark -k -i -
