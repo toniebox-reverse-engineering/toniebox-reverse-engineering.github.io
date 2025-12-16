@@ -13,13 +13,66 @@ To be sure your toniebox can connect to teddyCloud we do a so called "freshnessC
 If the box is flashing red and shouts the codeword turtle, be sure teddyCloud is running and the box can connect to your cloud. Check the [DNS step](../dns).
 
 ### Error: Codeword owl (Eule)
-If the box is flashing red and shouts the codeword owl, be sure teddyClouds `certs/server/ca.der` is identical to the one on box. Please check the [Flash replacement CA step](../flash-ca).
+If the box is flashing red and shouts the codeword `owl`, there might be several different problems:
+
+__1. docker-compose.yaml faulty__
+
+Problem:
+
+The ports in your `docker-compose.yaml` are still marked as comment (with a `#` in front of each line). The consequence: all 3 ports are not accessible outside the container, the teddyCloud GUI is not reachable with the local IP address of your host (192.168.x.x) and https communication between the box and teddyCloud is not possible. 
+
+Solution:
+
+- Remove the `#` in front of each line in your `docker-compose.yaml`:
+```
+ports:
+  - 80:80 #optional (for the webinterface)
+  - 8443:8443 #optional (for the webinterface)
+  - 443:443 #Port is needed for the connection for the box, must not be changed!
+```
+- Restart Teddycloud: `docker-compose up -d`
+
+- Verify open ports: `docker container port teddycloud`
+```
+80/tcp -> 0.0.0.0:80
+443/tcp -> 0.0.0.0:443
+8443/tcp -> 0.0.0.0:8443
+```
+
+__2. Wrong teddyCloud host ip address__
+
+Problem:
+
+The Docker daemon uses its own virtual ip address range for networking. By default, it starts with `172.*.*.*` (`172.16.*.*`, `172.17.*.*` etc.). Please **don't** use these ip addresses. They are only reachable on your Docker host. 
+
+Solution:
+
+When applying a [DNS patch](https://tonies-wiki.revvox.de/docs/tools/teddycloud/setup/dns) for your box, always use the local ip address of your teddyCloud host machine, normally starting with `192.168.*.*`. Find the correct ip address in the network settings of your Router or run `hostname -I | awk '{print $1}'` on your teddyCloud host (Linux).
+
+
+__3. Wrong certificates__
+
+Problem:
+
+The Teddycloud server CA certificate (automatically generated upon start) is not the same as on the box.
+
+Solution:
+
+Verify that teddyClouds `certs/server/ca.der` is identical to the one on box. Please check the [Flash replacement CA step](../flash-ca).
 
 Sometimes you'll need to regenerate teddyClouds certificates as it may be defective. For that delete all files in `certs/server/ca.der` and restart teddyCloud. We had the case that an esp32 based box worked with the certificate, but the cc3200 based one had trouble. After regenerating the certificates it was fine.
 
-This error can also happen if the box tries to reach the boxine cloud. Check the [DNS step](../dns).
+__4. Wrong DNS resolution__
 
-Alternativly you may use a reverse proxy like nginx or traefik between teddyCloud and your box. This is not supported, teddyCloud needs its own dedicated IP address.
+Problem:
+
+The Box can't reach Boxine cloud (e.g. when using an original Tonie for the first time)
+
+Solution:
+
+- Check the [DNS step](../dns). 
+
+- If you use a reverse proxy like `nginx` or `traefik` between teddyCloud and your box: this is not supported, teddyCloud needs its own dedicated IP address.
 
 Example log output:
 ```
