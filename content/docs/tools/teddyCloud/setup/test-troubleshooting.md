@@ -127,3 +127,35 @@ INFO |handler_cloud.c:0692:handleCloudFreshnessCheck| Freshness check response: 
 WARN |tls_server_fsm.c:0260:tlsPerformServerHandshake| TLS handshake failure!
 ```
 Please check if `prod.de.tbs.toys` and `rtnl.bxcl.de` are resolved to your teddyCloud instance within its own container. Please either give your Toniebox a custom DNS that resolved them to teddyCloud or the teddyCloud instance a DNS that does not tamper the urls.
+
+## Flashing back the previous image
+If you somehow fail to setup everything but keep your previous image. For an esp32 this is the way to reflash back the image:
+
+    python -m esptool -b 921600 write_flash 0x0 .\Downloads\tb.esp32.bin --flash_size 8MB
+
+Resulting in the following example output
+    
+    esptool.py v4.8.1
+    Found 1 serial ports
+    Serial port COM5
+    Connecting....
+    Detecting chip type... ESP32-S3
+    Chip is ESP32-S3 (QFN56) (revision v0.2)
+    Features: WiFi, BLE
+    Crystal is 40MHz
+    MAC: 48:ca:43:48:fd:ac
+    Uploading stub...
+    Running stub...
+    Stub running...
+    Changing baud rate to 921600
+    Changed.
+    Configuring flash size...
+    Flash will be erased from 0x00000000 to 0x007fffff...
+    SHA digest in image updated
+    Compressed 8388608 bytes to 2391441...
+    Wrote 8388608 bytes (2391441 compressed) at 0x00000000 in 45.3 seconds (effective 1481.6 kbit/s)...
+    Hash of data verified.
+    
+    Leaving...
+    Hard resetting via RTS pin...
+
