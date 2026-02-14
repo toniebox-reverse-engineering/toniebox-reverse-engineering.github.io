@@ -17,7 +17,7 @@ Please beware that port 443 cannot be remapped and you cannot use a reverse prox
 ## Preparation
 First of all, prepare your teddyCloud installation. On first run, teddyCloud generates its certificates. During the generation you cannot access the webinterface. This can take several minutes! Be sure you check the log output!
 
-Please connect your Toniebox to your Wi-Fi and update its firmware. Many boxes are shipped with a production firmware that needs to be updated. Otherwise the box won't work as it should. It is not necessary to connect the box to the mytonies app/account. [Connect the box without the setup assistant.](https://support.tonies.com/hc/en-us/articles/4415294030482-How-do-I-set-up-a-Wi-Fi-connection-without-the-setup-assistant)
+Please connect your Toniebox to your Wi-Fi and update its firmware. Many boxes are shipped with a production firmware that needs to be updated. Otherwise the box won't work as it should. It is not necessary to connect the box to the mytonies app/account. [Connect the box without the setup assistant.](https://support.tonies.com/hc/en-us/articles/29036588511762-How-do-I-set-up-a-Wi-Fi-connection-without-the-setup-assistant)
 
 ## Device specific preparation
 Please check wether you got a Toniebox with a CC3200, CC3235 or ESP32 and continue with the following steps:
