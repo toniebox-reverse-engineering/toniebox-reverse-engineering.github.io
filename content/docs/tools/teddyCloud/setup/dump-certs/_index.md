@@ -22,3 +22,4 @@ As the dumping process is different for each type of box, continue with the devi
 * [CC3200](cc3200)
 * [CC3235](cc3235)
 * [ESP32](esp32)
+* [Toniebox 2](tb2)

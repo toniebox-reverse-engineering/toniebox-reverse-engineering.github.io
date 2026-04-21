@@ -20,10 +20,12 @@ First of all, prepare your teddyCloud installation. On first run, teddyCloud gen
 Please connect your Toniebox to your Wi-Fi and update its firmware. Many boxes are shipped with a production firmware that needs to be updated. Otherwise the box won't work as it should. It is not necessary to connect the box to the mytonies app/account. [Connect the box without the setup assistant.](https://support.tonies.com/hc/en-us/articles/29036588511762-How-do-I-set-up-a-Wi-Fi-connection-without-the-setup-assistant)
 
 ## Device specific preparation
-Please check wether you got a Toniebox with a CC3200, CC3235 or ESP32 and continue with the following steps:
+Please check wether you got a Toniebox 1 with a CC3200, CC3235 or ESP32 and continue with the following steps:
 * [Dump CA and client certificates](dump-certs)
 * [Flash the replacement CA](flash-ca)
 * [DNS](dns)
+
+The Toniebox 2 is different and we are on it to make it work with teddyCloud.
 
 ## Test & Troubleshooting
 If you have problems with teddyCloud or just want to be sure everything works as it should, please check our [Test & Troubleshooting site](test-troubleshooting).
