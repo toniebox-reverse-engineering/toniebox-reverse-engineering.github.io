@@ -76,9 +76,21 @@ But the in experiments used encoder did not have an obvious feature to do this.
 
 **We have developed a tool called [teddy](https://github.com/toniebox-reverse-engineering/teddy) to encode and decode these files.**
 
-# Audio file extraction with Linux OS
-- Remove Header of the file with ´dd bs=4096 skip=1 if=500304E0 of=trim.ogg´
-- then just use ffmpeg to convert it into mp3 ´ffmpeg -i trim.ogg done.mp3´
+# Audio file extraction with Linux OS and bash shell
+
+1. read the *header_len* (in hex): `dd status=none if=50012345 bs=1 count=4 | xxd -plain`
+2. convert to decimal and add 4 in order to get the length (in decimal) of the whole header
+3. read the audio_data into file: `dd if=50012345 bs=1 skip="${header_len}" of=50012345.audio_data.ogg`
+4. (optional) convert audio_data from ogg to mp3: `ffmpeg -i 50012345.audio_data.ogg 50012345.audio_data.mp3`
+
+The same procedure as one block of spagetthi code for easier copy&paste:
+
+```bash
+inputfile=50012345
+header_len="$((4+0x"$(dd status=none if="${inputfile}" bs=1 count=4 | xxd -plain)"))"
+dd if="${inputfile}" bs=1 skip="${header_len}" of=${inputfile}.audio_data.ogg
+ffmpeg -i "${inputfile}.audio_data.ogg" "${inputfile}.audio_data.mp3"
+```
 
 # Audio file extraction with Windows
 - Remove Header of the file with: powershell -Command "$in = [System.IO.File]::OpenRead('00000000'); $out = [System.IO.File]::Create('trim.ogg'); $in.Seek(4096, 'Begin') | Out-Null; $in.CopyTo($out); $in.Close(); $out.Close()"
