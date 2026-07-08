@@ -15,6 +15,10 @@ Here you find a list of working microSD cards for the box. It seems to be very p
 * 32GB Perciron microSD (noname Aliexpress)
 ## Samsung
 * 512GB Samsung EVO Plus microSDXC UHS-I Class 10 U3 (MB-MC512KA/EU)
+## Intenso
+* 64GB Intenso Micro SDHC memory card I 1 C10 (ASIN B00KIOWX4O) [^1]
+
+[^1]: In Linux, format with `mkfs.vfat -F32`.
 
 # Not Working
 ## Samsung
