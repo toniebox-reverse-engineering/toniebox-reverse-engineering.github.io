@@ -19,7 +19,8 @@ Below is a compilation of NAS/server hardware that has been successfully utilize
 | Raspberry Pi 1 Model A Rev 1.1  | Works with Raspberry Pi OS (32-Bit) and the teddycloud build for Alpine Linux (see https://github.com/toniebox-reverse-engineering/teddycloud/issues/225)                                          |
 | Qnap TS-462 (QTS 5.2.3.3006)    | Works out of the box in Container Station                                                                                                                                                          |
 | Proxmox on Dell Wyse 5070       | Works out of the box with Proxmox VE Helper Script. Needs some time till you can access the ip address.                                                                                            |
-| ...                             |                                                                                                                                                                                                    |
+| Truenas                         | Works out of the box. Port 443 is already used by the GUI of Truenas but you can change that in General> GUI HTTPS port settings                                                                                                                                                                                          |
+| ...                             |          
 
 Consider using Alpine container instead of Ubuntu / Debian container if your server has limited resources.
 
