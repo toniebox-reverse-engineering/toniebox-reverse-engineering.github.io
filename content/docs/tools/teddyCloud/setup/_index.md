@@ -12,7 +12,7 @@ Minimal teddyCloud version for this docu is release v0.6.0! Please ensure you ar
 The docker container automatically generates the server certificates on first run. You can extract the ```certs/server/ca.der``` for your box after that. 
 
 An example [docker-compose.yaml can be found within the docker subdir.](https://github.com/toniebox-reverse-engineering/teddycloud/blob/master/docker/docker-compose.yaml)
-Please beware that port 443 cannot be remapped and you cannot use a reverse proxy like nginx or traefik without passing through the TLS (complex, not recommended). The client certificate authentication needs to be done by teddyCloud. Also, there is no SNI. If you are using docker, you can use macvlan to give the teddyCloud container a dedicated IP address (recommended).
+Please beware that port 443 cannot be remapped and you cannot use a reverse proxy like nginx or traefik without passing through the TLS (complex, not recommended). The client certificate authentication needs to be done by teddyCloud. Also, there is no SNI. If you are using docker, you can [use macvlan](docker-macvlan) to give the teddyCloud container a dedicated IP address (recommended).
 
 ## Preparation
 First of all, prepare your teddyCloud installation. On first run, teddyCloud generates its certificates. During the generation you cannot access the webinterface. This can take several minutes! Be sure you check the log output!
