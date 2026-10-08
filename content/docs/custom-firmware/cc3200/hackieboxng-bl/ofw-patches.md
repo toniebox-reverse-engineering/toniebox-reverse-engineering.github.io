@@ -46,6 +46,8 @@ Usally the toniebox puts every tag into privacy mode after reading it. This patc
 To use two CAs you can use this patch. It will change the CA path from flash:/cert/ca.der to flash:/cert/c2.der
 ### Change Boxine URLs ([altUrl.305.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/patch/altUrl.305.json))
 Changes the Boxine Cloud URLs from prod.de.tbs.toys to prod.revvox and rtnl.bxcl.de to rtnl.revvox.
+### Change port ([altPort.json](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/bootmanager/sd/revvox/boot/patch/altPort.json))
+Changes the port of the Boxine Cloud connection (API and RTNL) from 443 to 10443. Usefull to route several teddyCloud instances behind one proxy, as the toniebox sends no SNI. Supports 3.1.0-BF2, 3.3.0 and 3.4.0. Patches for other ports can be generated with [altport.py](https://github.com/toniebox-reverse-engineering/hackiebox_cfw_ng/blob/master/sd-bootloader-ng/tools/altport.py).
 
 
 ##  Development
