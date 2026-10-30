@@ -30,6 +30,7 @@ description: ""
 |Version|Branch|Creation Date|Year|git short hash|Comments|hash|
 |-|-|-|-|-|-|-|
 ||||||Factory Image?|16abb09640ff6010af5b825c4a262b616b98f6006b23377ad3e510dabee5d4cf|
+|v3.3.0|HEAD|29 Apr 13:19||f2702f0||b8714ff27c7dff2a17472ebe1e9867c6355ded9d4b6f969d9ef211c10d81940e|
 
 ## Demo firmwares
 |Version|Branch|Creation Date|Year|git short hash|Comments|hash|
